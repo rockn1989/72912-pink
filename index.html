@@ -2,11 +2,182 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>PINK: Главная</title>
   </head>
   <body>
+    <div class="wrapper">
+      <header class="page-header">
+        <nav class="main-nav">
+          <div class="main-nav__header">
+            <div class="main-nav__logo">
+              <img src="http://placehold.it/80x30">
+            </div>
+            <div class="main-nav__open-menu">
+              <img src="http://placehold.it/60x30">
+            </div>
+          </div>
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="http://htmlacademy.ru">Html Academy</a></li>
+          </ul>
+        </nav>
+        <div class="description">
+          <p class="description__img">
+            <img src="http://placehold.it/130x270">
+          </p>
+        </div>
+        <div class="download-app">
+          <div class="download-app__btn">
+            <a class="basic-btn basic-btn--download" href="#">Скачать приложение</a>
+          </div>
+          <div class="download-app__links">
+            <a href="#" class="download-app__link download-app__link--apple">
+              <img src="http://placehold.it/60x65">
+            </a>
+            <a href="#" class="download-app__link download-app__link--android">
+              <img src="http://placehold.it/60x65">
+            </a>
+            <a href="#" class="download-app__link download-app__link--windows">
+              <img src="http://placehold.it/60x65">
+            </a>
+          </div>
+          <div class="download-app__footer">
+            <p class="download-app__footer-desc">
+              Доступно для iPhone, iPad, Android,<br>
+              Windows Phone, OS X, Windows 8
+            </p>
+          </div>
+        </div>
+      </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+      <article class="information">
+        <header class="information-header">
+          <p class="information-header__desc">Устали от серости мегаполиса?</p>
+          <p class="information-header__desc">Нам есть, что вам предложить!</p>
+        </header>
+        <section class="ad">
+          <p class="ad__title">Поднимает настроение</p>
+          <p class="ad__desc">
+            Приложение позволит вам победить оскееюю хандру
+            и депрессию буквально в несколько кликов!
+          </p>
+        </section>
+        <section class="ad">
+          <p class="ad__title">Меняет мир вокруг</p>
+          <p class="ad__desc">
+            Сделай снимок и украсьте его смайликом или текстовой подписью,
+            чтобы усилить эффект
+          </p>
+        </section>
+        <section class="ad">
+          <p class="ad__title">Заводит новых друзей</p>
+          <p class="ad__desc">
+            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+          </p>
+        </section>
+        <footer class="information-footer">
+          <img src="http://placehold.it/160x325">
+        </footer>
+      </article>
 
+      <section class="review">
+        <div class="review-slider">
+          <!--- УПРАВЛЕНИЕ СЛАЙДАМИ! -->
+            <article class="review-slider__slide review-slider__slide--1">
+              <p class="review-slider__title">Николай Петров</p>
+              <p class="review-slider__desc">
+                Это приложение перевернуло мой мир и
+                позволило по-новому взглянуть на привычные серые вещи!
+                А еще я познакомился со своей будущей женой в комментариях к
+                выложенной фотографии!
+              </p>
+            </article>
+            <article class="review-slider__slide review-slider__slide--2">
+              <p class="review-slider__title">Николай Петров-2</p>
+              <p class="review-slider__desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Cum quisquam harum ab provident explicabo magni tempore quod
+                nostrum placeat beatae.
+              </p>
+            </article>
+            <article class="review-slider__slide review-slider__slide--3">
+              <p class="review-slider__title">Николай Петров-3</p>
+              <p class="review-slider__desc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Sequi quaerat commodi ipsum corrupti quasi optio a vel consectetur, maxime sit.
+              </p>
+            </article>
+        </div>
+      </section>
+
+      <section class="prices">
+        <!--- УПРАВЛЕНИЕ СЛАЙДЕРОМ! -->
+          <article class="price-plan price-plan--slide-1">
+            <header class="price-plan__header">
+              <h1 class="price-plan__title">Бесплатно</h1>
+              <p class="price-plan__price">0</p>
+            </header>
+            <ul class="price-plan__options">
+              <li class="price-plan__option price-plan__option--included">Розовый фильтр</li>
+              <li class="price-plan__option price-plan__option--absent">Смайлики</li>
+              <li class="price-plan__option price-plan__option--absent">Комментарии</li>
+            </ul>
+          </article>
+          <article class="price-plan price-plan--slide-2">
+            <header class="price-plan__header">
+              <h1 class="price-plan__title">Стандарт</h1>
+              <p class="price-plan__price">3,99 USD</p>
+            </header>
+            <ul class="price-plan__options">
+              <li class="price-plan__option price-plan__option--included">Розовый фильтр</li>
+              <li class="price-plan__option price-plan__option--included">Смайлики</li>
+              <li class="price-plan__option price-plan__option--absent">Комментарии</li>
+            </ul>
+          </article>
+          <article class="price-plan price-plan--slide-3">
+            <header class="price-plan__header">
+              <h1 class="price-plan__title">Премиум</h1>
+              <p class="price-plan__price">6,99 USD</p>
+            </header>
+            <ul class="price-plan__options">
+              <li class="price-plan__option price-plan__option--included">Розовый фильтр</li>
+              <li class="price-plan__option price-plan__option--included">Смайлики</li>
+              <li class="price-plan__option price-plan__option--included">Комментарии</li>
+            </ul>
+          </article>
+      </section>
+
+      <article class="contacts">
+        <header class="contacts-header">
+          <p class="contacts-header__desc">
+            Остались вопросы ?<br>
+            Свяжитесь с нами!
+          </p>
+        </header>
+        <section class="contacts-info">
+          <div class="contact">
+            <p class="contact__title">Звоните:</p>
+            <p class="contact__desc">
+              <a href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </p>
+          </div>
+          <div class="contact">
+            <p class="contact__title">Пишите:</p>
+            <p class="contact__desc">
+              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </p>
+          </div>
+          <div class="contact">
+            <p class="contact__title">Приезжайте в гости:</p>
+            <p class="contact__desc">ул. Большая<br>Конюшенная, 19/8</p>
+          </div>
+        </section>
+      </article>
+      <section class="map">
+          <img src="http://placehold.it/320x200">
+      </section>
+    </div>
   </body>
 </html>
