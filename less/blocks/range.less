@@ -1,0 +1,32 @@
+
+.range__control {
+  width: 240px;
+  height: 2px;
+  margin: auto;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+}
+
+.range__pointer {
+  position: absolute;
+  top: -7px;
+  right: 20%;
+  z-index: 6;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border: 2px solid #ce2856;
+  border-radius: 50%;
+  &:hover {
+    cursor: pointer;
+  }
+  &:active {
+    background-color: #ce2856;
+  }
+}

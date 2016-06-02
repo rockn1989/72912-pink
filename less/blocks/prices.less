@@ -1,0 +1,47 @@
+
+.prices {
+  margin-bottom: 94px;
+}
+
+.price-plan {
+  max-width: 280px;
+}
+
+.price-plan__header {
+  background-color: #283645;
+  text-align: center;
+  color: #fff;
+  padding: 17px 0;
+}
+
+.price-plan__title {
+  font-weight: bold;
+  .text-size(18px);
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.price-plan__price {
+  .text-size(24px);
+}
+
+.price-plan__options {
+  font-weight: normal;
+  list-style: none;
+  border: 1px solid #e5e5e5;
+}
+.price-plan__option {
+  text-transform: uppercase;
+  .text-size(14px);
+  color: #283645;
+  padding: 23px 17px 24px 20px;
+  border-bottom: 1px solid #e5e5e5;
+  background-position: top 47% right 20px;
+  background-repeat: no-repeat;
+  &--included {
+    background-image: url('../img/icon-yes.svg');
+  }
+  &--absent {
+    background-image: url('../img/icon-no.svg');
+  }
+}
