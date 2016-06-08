@@ -1,0 +1,29 @@
+
+.clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.text-size(@fontsize, @lineheight) {
+  font-size: @fontsize;
+  line-height: @lineheight;
+}
+
+
+.text-size(@fontsize) when (@fontsize = 14) {
+  font-size: @fontsize;
+  line-height: 30px;
+}
+
+.text-size(@fontsize) when (@fontsize = 18) {
+  font-size: @fontsize;
+  line-height: 30px;
+}
+
+.text-size(@fontsize) when (@fontsize = 24) {
+  font-size: @fontsize;
+  line-height: 30px;
+}

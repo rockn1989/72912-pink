@@ -1,0 +1,39 @@
+
+.contacts {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.contacts-header__desc {
+  font-weight: 300;
+  .text-size(24px);
+  color:#283645;
+  margin-bottom: 45px;
+}
+
+.contact {
+  margin-bottom: 28px;
+}
+
+.contact__title {
+  font-weight: bold;
+  .text-size(24px);
+  margin-bottom: 13px;
+}
+
+.contact__desc {
+  .text-size(24px);
+  color:#d22856;
+  & a {
+    text-decoration: none;
+    color:#d22856;
+    &:hover {
+      color: #000;
+      text-decoration: underline;
+    }
+    &:active {
+      color: #e9eaeb;
+    }
+  }
+}
+
