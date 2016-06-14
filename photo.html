@@ -3,30 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>PINK: Фотографии</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="wrapper">
       <header class="page-header">
+
         <nav class="main-nav">
-          <div class="main-nav__header">
-            <div class="main-nav__logo">
-              <img src="img/logo-pink-white-mobile.svg">
-            </div>
-            <div class="main-nav__open-menu">
-              <img src="img/icon-no.svg">
+          <div class="center-wrapper">
+            <div class="header-flex-wrapper">
+                <div class="main-nav__header">
+                    <a href="/" class="main-nav__logo">На главную</a>
+                    <a href="" class="main-nav__open-menu">Открыть меню</a>
+                </div>
+                <ul class="main-nav__list main-nav__list--menu-close">
+                  <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link">Фотографии</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="http://htmlacademy.ru">Html Academy</a></li>
+                </ul>
             </div>
           </div>
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-            <li class="main-nav__item"><a class="main-nav__link">Фотографии</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="http://htmlacademy.ru">Html Academy</a></li>
-          </ul>
         </nav>
+
         <div class="description">
           <p class="description__text">
-            Фотографии пользователей
+            Фотографии <br> пользователей
           </p>
         </div>
       </header>
@@ -38,8 +41,8 @@
             Видите, как не хватает ваших?
           </h2>
         </header>
-        <article class="user-post">
-          <div class="user-post__photo user-post__photo--best">
+        <article class="user-post user-post--best">
+          <div class="user-post__photo">
             <img src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
           </div>
           <div class="user-post__desc-wrapper">
@@ -58,121 +61,122 @@
             </div>
           </div>
         </article>
-        <article class="user-post">
-          <div class="user-post__photo">
-            <img src="img/photo-1-mobile@1x.jpg" alt="Пост Левона">
-          </div>
-          <div class="user-post__desc-wrapper">
-            <div class="user-post__description">
-              <header class="user-post__header">
-                <h2 class="user-post__title">Левон</h2>
-                <span class="user-post__date">(5 часов назад)</span>
-              </header>
-              <p class="user-post__text">
-                Вчера он на луну летал, сегодня в руки к нам попал.
-              </p>
-              <p class="user-post__likes">
-                Нравится: 356
-              </p>
+        <div class="user-post__wrapper">
+          <article class="user-post">
+            <div class="user-post__photo">
+              <img src="img/photo-1-mobile@1x.jpg" alt="Пост Левона">
             </div>
-          </div>
-        </article>
-        <article class="user-post">
-          <div class="user-post__photo">
-            <img src="img/photo-2-mobile@1x.jpg" alt="Пост Антона">
-          </div>
-          <div class="user-post__desc-wrapper">
-            <div class="user-post__description">
-              <header class="user-post__header">
-                <h2 class="user-post__title">Антон</h2>
-                <span class="user-post__date">(12 часов назад)</span>
-              </header>
-              <p class="user-post__text">
-                Соседи будут рады!
-              </p>
-              <p class="user-post__likes">
-                Нравится: 666
-              </p>
+            <div class="user-post__desc-wrapper">
+              <div class="user-post__description">
+                <header class="user-post__header">
+                  <h2 class="user-post__title">Левон</h2>
+                  <span class="user-post__date">(5 часов назад)</span>
+                </header>
+                <p class="user-post__text">
+                  Вчера он на луну летал, сегодня в руки к нам попал.
+                </p>
+                <p class="user-post__likes">
+                  Нравится: 356
+                </p>
+              </div>
             </div>
-          </div>
-        </article>
-        <article class="user-post">
-          <div class="user-post__photo">
-            <img src="img/photo-3-mobile@1x.jpg" alt="Пост Бориса">
-          </div>
-          <div class="user-post__desc-wrapper">
-            <div class="user-post__description">
-              <header class="user-post__header">
-                <h2 class="user-post__title">Борис</h2>
-                <span class="user-post__date">(20 часов назад)</span>
-              </header>
-              <p class="user-post__text">
-                Здесь могла быть цитата о высоком и вечном.
-              </p>
-              <p class="user-post__likes">
-                Нравится: 215
-              </p>
+          </article>
+          <article class="user-post">
+            <div class="user-post__photo">
+              <img src="img/photo-2-mobile@1x.jpg" alt="Пост Антона">
             </div>
-          </div>
-        </article>
-        <article class="user-post">
-          <div class="user-post__photo">
-            <img src="img/photo-4-mobile@1x.jpg" alt="Пост Сергея">
-          </div>
-          <div class="user-post__desc-wrapper">
-            <div class="user-post__description">
-              <header class="user-post__header">
-                <h2 class="user-post__title">Сергей</h2>
-                <span class="user-post__date">(25 часов назад)</span>
-              </header>
-              <p class="user-post__text">
-                Самая кубанская в мире!
-              </p>
-              <p class="user-post__likes">
-                Нравится: 4
-              </p>
+            <div class="user-post__desc-wrapper">
+              <div class="user-post__description">
+                <header class="user-post__header">
+                  <h2 class="user-post__title">Антон</h2>
+                  <span class="user-post__date">(12 часов назад)</span>
+                </header>
+                <p class="user-post__text">
+                  Соседи будут рады! lorem
+                </p>
+                <p class="user-post__likes">
+                  Нравится: 666
+                </p>
+              </div>
             </div>
-          </div>
-        </article>
-        <article class="user-post">
-          <div class="user-post__photo">
-            <img src="img/photo-5-mobile@1x.jpg" alt="Пост Максима">
-          </div>
-          <div class="user-post__desc-wrapper">
-            <div class="user-post__description">
-              <header class="user-post__header">
-                <h2 class="user-post__title">Максим</h2>
-                <span class="user-post__date">(40 часов назад)</span>
-              </header>
-              <p class="user-post__text">
-                Где снег-то?
-              </p>
-              <p class="user-post__likes">
-                Нравится: 150
-              </p>
+          </article>
+          <article class="user-post">
+            <div class="user-post__photo">
+              <img src="img/photo-3-mobile@1x.jpg" alt="Пост Бориса">
             </div>
-          </div>
-        </article>
-
-        <article class="user-post">
-          <div class="user-post__photo">
-            <img src="img/photo-6-mobile@1x.jpg" alt="Пост Надежды">
-          </div>
-          <div class="user-post__desc-wrapper">
-            <div class="user-post__description">
-              <header class="user-post__header">
-                <h2 class="user-post__title">Надежда</h2>
-                <span class="user-post__date">(45 часов назад)</span>
-              </header>
-              <p class="user-post__text">
-                Всем GM и взаимные лайки!
-              </p>
-              <p class="user-post__likes">
-                Нравится: 2560
-              </p>
+            <div class="user-post__desc-wrapper">
+              <div class="user-post__description">
+                <header class="user-post__header">
+                  <h2 class="user-post__title">Борис</h2>
+                  <span class="user-post__date">(20 часов назад)</span>
+                </header>
+                <p class="user-post__text">
+                  Здесь могла быть цитата о высоком и вечном.
+                </p>
+                <p class="user-post__likes">
+                  Нравится: 215
+                </p>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
+          <article class="user-post">
+            <div class="user-post__photo">
+              <img src="img/photo-4-mobile@1x.jpg" alt="Пост Сергея">
+            </div>
+            <div class="user-post__desc-wrapper">
+              <div class="user-post__description">
+                <header class="user-post__header">
+                  <h2 class="user-post__title">Сергей</h2>
+                  <span class="user-post__date">(25 часов назад)</span>
+                </header>
+                <p class="user-post__text">
+                  Самая кубанская в мире!
+                </p>
+                <p class="user-post__likes">
+                  Нравится: 4
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="user-post">
+            <div class="user-post__photo">
+              <img src="img/photo-5-mobile@1x.jpg" alt="Пост Максима">
+            </div>
+            <div class="user-post__desc-wrapper">
+              <div class="user-post__description">
+                <header class="user-post__header">
+                  <h2 class="user-post__title">Максим</h2>
+                  <span class="user-post__date">(40 часов назад)</span>
+                </header>
+                <p class="user-post__text">
+                  Где снег-то?
+                </p>
+                <p class="user-post__likes">
+                  Нравится: 150
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="user-post">
+            <div class="user-post__photo">
+              <img src="img/photo-6-mobile@1x.jpg" alt="Пост Надежды">
+            </div>
+            <div class="user-post__desc-wrapper">
+              <div class="user-post__description">
+                <header class="user-post__header">
+                  <h2 class="user-post__title">Надежда</h2>
+                  <span class="user-post__date">(45 часов назад)</span>
+                </header>
+                <p class="user-post__text">
+                  Всем GM и взаимные лайки!
+                </p>
+                <p class="user-post__likes">
+                  Нравится: 2560
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
       </article>
 
       <section class="photo-uploader">
@@ -224,5 +228,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/main.js"></script>
   </body>
 </html>

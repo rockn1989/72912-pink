@@ -1,10 +1,24 @@
 
 .prices {
   margin-bottom: 94px;
+  position: relative;
+  width: 320px;
+  min-height: 380px;
+  overflow: hidden;
+  border:1px solid black;
+  background-color: #f2f2f2;
+}
+
+.price-plan__wrapper {
+  width: 840px;
+  position: absolute;
+  .clearfix();
+  left: -260px;
 }
 
 .price-plan {
-  max-width: 280px;
+  width: 280px;
+  float: left;
 }
 
 .price-plan__header {
@@ -29,12 +43,13 @@
   font-weight: normal;
   list-style: none;
   border: 1px solid #e5e5e5;
+  background-color: #ffffff;
 }
 .price-plan__option {
   text-transform: uppercase;
   .text-size(14px);
   color: #283645;
-  padding: 23px 17px 24px 20px;
+  padding: 14px 17px 14px 20px;
   border-bottom: 1px solid #e5e5e5;
   background-position: top 47% right 20px;
   background-repeat: no-repeat;

@@ -1,11 +1,33 @@
 
 .page-footer {
-  //
+  text-align: center;
+  @media @tablet-width {
+    display: flex;
+    justify-content: space-between;
+    align-content: baseline;
+    padding: 37px 40px;
+  }
+
+  @media @desktop-width {
+    padding: 95px 130px 20px;
+  }
+
 }
 
 .footer-logo {
-  text-align: center;
   margin-bottom: 34px;
+  & img {
+    width: auto;
+  }
+  @media @tablet-width {
+    width: 150px;
+    margin-bottom: 0;
+  }
+
+  @media @desktop-width {
+
+  }
+
 }
 
 

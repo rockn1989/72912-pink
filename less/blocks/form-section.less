@@ -1,23 +1,115 @@
 
 .form-section {
   border: none;
-  margin-bottom: 29px;
-  &:nth-child(2) {
+  position: relative;
+  & legend {
+    position: absolute;
+  }
+  &--user-name {
+    margin-bottom: 29px;
+  }
+  &--progress {
     margin-bottom: 25px;
-    padding: 40px 0 47px;
+    padding: 115px 0 47px;
     background-color: #f2f2f2;
+    & legend {
+      top: 40px;
+    }
   }
-  &:nth-child(3) {
-    margin-bottom: 39px;
+  &--info {
+    margin-bottom:40px;
+    & legend {
+      display: none;
+    }
   }
-  &:nth-child(4) {
-    margin-bottom: 59px;
-    padding: 37px 0 40px;
+  &--application {
+    margin-bottom: 60px;
+    padding: 107px 0 40px;
     background-color: #f2f2f2;
+    & legend {
+      top: 40px;
+    }
   }
-  &:nth-child(5) {
+  &--description {
     margin-bottom: 41px;
+    & legend {
+      top: -35px;
+    }
   }
+
+  @media @tablet-width {
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+    & legend {
+      position: static;
+    }
+    &--progress,
+    &--info,
+    &--description,
+    &--application {
+      width: 100%;
+      border: 2px solid #e5e5e5;
+      padding: 48px 60px;
+      background-color: transparent;
+      margin-bottom: 65px;
+    }
+    & p.form-section__title {
+      display: none;
+    }
+    & legend {
+      display: block;
+      margin-bottom: 0;
+    }
+    &--user-name {
+      order: 1;
+      width: 100%;
+    }
+    &--progress {
+      order: 4;
+    }
+    &--info {
+      order: 3;
+    }
+    &--application {
+      order: 2;
+    }
+    &--description {
+      order: 5;
+    }
+  }
+
+  @media @desktop-width {
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+    &--user-name {
+      width: 434px;
+      margin-right: 35px;
+    }
+    &--progress {
+      padding-right: 0;
+    }
+    &--application {
+      width: 434px;
+      margin-left: 27px;
+      margin-top: -7px;
+      padding-right: 0;
+      & legend {
+        padding:  0 25px;
+      }
+    }
+    &--info {
+      display: flex;
+      flex-direction: row;
+      padding: 34px 60px 12px;
+    }
+  }
+
 }
 
 .form-section .button {
@@ -29,9 +121,10 @@
   color: #d22856;
   text-align: center;
   text-transform: uppercase;
-  padding: 0 20px;
+  padding: 0 30px;
   margin-bottom: 40px;
   &--margin {
     margin-bottom: 17px;
   }
 }
+

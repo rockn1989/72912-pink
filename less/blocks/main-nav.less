@@ -1,24 +1,82 @@
 
 .main-nav {
   font-weight: bold;
-  background-color: #283645;
+  background-color: rgba(0,0,0,0.3);
+  &--mrg {
+    margin-bottom: 362px;
+  }
+  &--menu-open {
+    background-color: #283645;
+  }
+  @media @tablet-width {
+    margin-bottom: 0;
+  }
+
+  @media @desktop-width {
+
+  }
+}
+
+.header-flex-wrapper {
+
+  @media @desktop-width {
+    display: flex;
+    & .main-nav__open-menu {
+      display: none;
+    }
+    & .main-nav__list {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      text-transform: normal;
+    }
+  }
+
 }
 
 .main-nav__header {
   padding: 20px;
-  .clearfix();
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
-.main-nav__logo {
-  float: left;
-}
-
+.main-nav__logo,
 .main-nav__open-menu {
-  float: right;
+  display: block;
+  width: 80px;
+  height: 30px;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+.main-nav__logo {
+  background-image: url('../img/logo-pink-white-mobile.svg');
+
+  @media @desktop-width {
+    margin-right: 175px;
+  }
+
+}
+.main-nav__open-menu {
+  width: 60px;
+  background-image: url('../img/icon-menu-burger.svg');
+  &--menu-open {
+    background-image: url('../img/icon-menu-cross.svg');
+    background-position: center;
+  }
 }
 
 .main-nav__list {
-
+  &--menu-close {
+    display: none;
+  }
+  &--menu-open {
+    background-color: #283645;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 66;
+  }
 }
 
 .main-nav__item {
@@ -28,6 +86,9 @@
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000000;
   padding: 15px 0;
+  @media @desktop-width {
+    border: none;
+  }
 }
 
 .main-nav__link {
@@ -35,4 +96,20 @@
   color:#fff;
   text-decoration: none;
   text-transform: uppercase;
+  @media @desktop-width {
+    text-transform: none;
+    font-weight: 300;
+  }
 }
+
+/*
+@media @tablet-width {
+  .main-nav {
+    position: absolute;
+    width: 100%;
+    min-height: 110px;
+    background-color: rgba(0,0,0,.3);
+    z-index:99;
+  }
+}
+*/

@@ -4,10 +4,25 @@
   padding: 0 20px;
   font-weight: normal;
   background: #fff;
+
+  @media @tablet-width {
+    padding: 0 40px;
+  }
+
+  @media @desktop-width {
+    padding: 0 130px;
+    margin-bottom: 0;
+  }
+
 }
 
 .form-header {
   padding: 45px 0 32px;
+
+  @media @tablet-width {
+    padding: 78px 60px;
+  }
+
 }
 
 .form-header__desc {
@@ -15,6 +30,23 @@
   font-weight: normal;
   text-align: center;
   color:#283645;
+  &--attention {
+    display: none;
+  }
+
+  @media @tablet-width {
+    .text-size(18px);
+    &--attention {
+      display: block;
+    }
+  }
+
+  @media @desktop-width {
+    &--attention {
+      display: inline;
+    }
+  }
+
 }
 
 .form-textarea__field {
@@ -28,4 +60,9 @@
   text-indent: 0;
   border: 2px solid #e5e5e5;
   border-radius: 3px;
+
+  @media @desktop-width {
+    min-height: 125px;
+  }
+
 }
