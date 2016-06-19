@@ -16,13 +16,51 @@ div,section,article,p,h1,h2,h3,h4,ul,fieldset {
 }
 
 img {
-  width: auto;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .wrapper {
-   width: 320px;
-   margin: auto;
+  width: 320px;
+  margin: auto;
+
+  @media @tablet-width {
+    width: 700px;
+  }
+
+  @media @desktop-width {
+    width: 1200px;
+  }
+}
+
+.flex-wrapper {
+
+  @media @tablet-width {
+    &--tbl {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+  }
+
+  @media @desktop-width {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 
+.close {
+  display: none;
+}
+
+
+.center-wrapper {
+  padding: 0;
+  @media @tablet-width {
+    padding: 0 40px;
+  }
+  @media @desktop-width {
+    padding: 0 130px;
+  }
+}

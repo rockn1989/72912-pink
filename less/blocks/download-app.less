@@ -2,21 +2,44 @@
 .download-app {
   padding: 18px 20px 28px 20px;
   background: #1d2631;
+  position: relative;
+  z-index: 50;
+  @media @tablet-width {
+    width: 300px;
+    background-color: transparent;
+    padding: 100px 0;
+  }
+
+  @media @desktop-width {
+    //width: 300px;
+  }
+
+}
+
+.download-app__title {
+  display: none;
+
+  @media @tablet-width {
+    display: block;
+    .text-size(40px, 50px);
+    color:#fff;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 35px;
+  }
+
 }
 
 .download-app__links {
   margin-bottom: 27px;
   padding: 0 35px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .download-app__link {
-  display: inline-block;
-  vertical-align: middle;
   width: 45px;
   height: 60px;
-  &--apple,&--android  {
-    margin-right: 30px;
-  }
   &--apple {
     background: url('../img/logo-apple.svg') no-repeat;
   }

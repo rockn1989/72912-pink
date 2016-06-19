@@ -7,11 +7,8 @@
   outline: none;
   border-radius:3px;
   text-align: center;
-  //width: 280px;
- // height: 63px;
   text-transform: uppercase;
   padding: 17px 47px;
-  //margin: 40px 0;
   &--send {
     margin-bottom: 35px;
   }
@@ -22,6 +19,15 @@
   &:active {
     color: #7dbd99;
   }
+
+  @media @tablet-width {
+    padding: 17px 54px;
+  }
+
+  @media @desktop-width {
+    padding: 17px 60px;
+  }
+
 }
 
 .basic-btn {
@@ -76,4 +82,20 @@
       color:#f2ced5;
     }
   }
+
+  @media @tablet-width {
+    &--download {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media @desktop-width {
+    &--action {
+      margin-right: 40px;
+    }
+    &--download {
+      margin-bottom: 65px;
+    }
+  }
+
 }

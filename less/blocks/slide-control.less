@@ -1,0 +1,28 @@
+
+.slide-control {
+  position: absolute;
+  bottom: 37px;
+  left: 132px;
+}
+
+.slide-control__toggle {
+  display: none;
+  &:checked ~.slide-control__state {
+    border:4px solid #000;
+  }
+  &--slides-1:checked +.price-plan__wrapper{
+    left: 280px;
+    background-color: red;
+  }
+}
+
+.slide-control__state {
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #b5b9be;//b5b9be
+  margin-right: 14px;
+  cursor: pointer;
+}
+

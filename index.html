@@ -2,54 +2,55 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>PINK: Главная</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="wrapper">
-      <header class="page-header">
-        <nav class="main-nav">
-          <div class="main-nav__header">
-            <div class="main-nav__logo">
-              <img src="img/logo-pink-white-mobile.svg">
-            </div>
-            <div class="main-nav__open-menu">
-              <img src="img/icon-no.svg">
+
+      <header class="page-header page-header--bg">
+        <nav class="main-nav main-nav--mrg">
+          <div class="center-wrapper">
+            <div class="header-flex-wrapper">
+                <div class="main-nav__header">
+                    <a href="/" class="main-nav__logo">На главную</a>
+                    <a href="" class="main-nav__open-menu">Открыть меню</a>
+                </div>
+                <ul class="main-nav__list main-nav__list--menu-close">
+                  <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="http://htmlacademy.ru">Html Academy</a></li>
+                </ul>
             </div>
           </div>
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="http://htmlacademy.ru">Html Academy</a></li>
-          </ul>
         </nav>
-        <div class="description">
-          <p class="description__img">
-            <img src="img/iphone-hand-mobile@1x.png">
-          </p>
+
+
+        <div class="center-wrapper">
+          <article class="download-app">
+            <h2 class="download-app__title">Взгляните<br> на жизнь иначе!</h2>
+            <div class="download-app__btn">
+              <a class="basic-btn basic-btn--download" href="#">Скачать приложение</a>
+            </div>
+            <div class="download-app__links">
+              <a href="#" class="download-app__link download-app__link--apple">
+              </a>
+              <a href="#" class="download-app__link download-app__link--android">
+              </a>
+              <a href="#" class="download-app__link download-app__link--windows">
+              </a>
+            </div>
+            <div class="download-app__footer">
+              <p class="download-app__footer-desc">
+                Доступно для iPhone, iPad, Android,<br>
+                Windows Phone, OS X, Windows 8
+              </p>
+            </div>
+          </article>
         </div>
       </header>
-
-      <article class="download-app">
-        <div class="download-app__btn">
-          <a class="basic-btn basic-btn--download" href="#">Скачать приложение</a>
-        </div>
-        <div class="download-app__links">
-          <a href="#" class="download-app__link download-app__link--apple">
-          </a>
-          <a href="#" class="download-app__link download-app__link--android">
-          </a>
-          <a href="#" class="download-app__link download-app__link--windows">
-          </a>
-        </div>
-        <div class="download-app__footer">
-          <p class="download-app__footer-desc">
-            Доступно для iPhone, iPad, Android,<br>
-            Windows Phone, OS X, Windows 8
-          </p>
-        </div>
-      </article>
 
       <article class="information">
         <header class="information-header">
@@ -113,39 +114,56 @@
 
       <section class="prices">
         <!--- УПРАВЛЕНИЕ СЛАЙДЕРОМ! -->
-          <article class="price-plan price-plan--slide-1">
-            <header class="price-plan__header">
-              <h1 class="price-plan__title">Бесплатно</h1>
-              <p class="price-plan__price">0</p>
-            </header>
-            <ul class="price-plan__options">
-              <li class="price-plan__option price-plan__option--included">Розовый фильтр</li>
-              <li class="price-plan__option price-plan__option--absent">Смайлики</li>
-              <li class="price-plan__option price-plan__option--absent">Комментарии</li>
-            </ul>
-          </article>
-          <article class="price-plan price-plan--slide-2">
-            <header class="price-plan__header">
-              <h1 class="price-plan__title">Стандарт</h1>
-              <p class="price-plan__price">3,99 USD</p>
-            </header>
-            <ul class="price-plan__options">
-              <li class="price-plan__option price-plan__option--included">Розовый фильтр</li>
-              <li class="price-plan__option price-plan__option--included">Смайлики</li>
-              <li class="price-plan__option price-plan__option--absent">Комментарии</li>
-            </ul>
-          </article>
-          <article class="price-plan price-plan--slide-3">
-            <header class="price-plan__header">
-              <h1 class="price-plan__title">Премиум</h1>
-              <p class="price-plan__price">6,99 USD</p>
-            </header>
-            <ul class="price-plan__options">
-              <li class="price-plan__option price-plan__option--included">Розовый фильтр</li>
-              <li class="price-plan__option price-plan__option--included">Смайлики</li>
-              <li class="price-plan__option price-plan__option--included">Комментарии</li>
-            </ul>
-          </article>
+          <div class="slide-control">
+            <label class="slide-radio">
+              <input type="radio" class="slide-control__toggle slide-control__toggle--slides-1" name="device">
+              <span class="slide-control__state"></span>
+            </label>
+            <label class="slide-radio">
+              <input type="radio" class="slide-control__toggle slide-control__toggle--slides-2" name="device" checked>
+              <span class="slide-control__state"></span>
+            </label>
+            <label class="slide-radio">
+              <input type="radio" class="slide-control__toggle slide-control__toggle--slides-3" name="device">
+              <span class="slide-control__state"></span>
+            </label>
+          </div>
+
+          <div class="price-plan__wrapper">
+            <article class="price-plan price-plan--slide-1">
+              <header class="price-plan__header">
+                <h1 class="price-plan__title">База</h1>
+                <p class="price-plan__price">1,99 USD</p>
+              </header>
+              <ul class="price-plan__options">
+                <li class="price-plan__option price-plan__option--included">Розовый фильтр</li>
+                <li class="price-plan__option price-plan__option--absent">Смайлики</li>
+                <li class="price-plan__option price-plan__option--absent">Комментарии</li>
+              </ul>
+            </article>
+            <article class="price-plan price-plan--slide-2">
+              <header class="price-plan__header">
+                <h1 class="price-plan__title">Стандарт</h1>
+                <p class="price-plan__price">3,99 USD</p>
+              </header>
+              <ul class="price-plan__options">
+                <li class="price-plan__option price-plan__option--included">Розовый фильтр</li>
+                <li class="price-plan__option price-plan__option--included">Смайлики</li>
+                <li class="price-plan__option price-plan__option--absent">Комментарии</li>
+              </ul>
+            </article>
+            <article class="price-plan price-plan--slide-3">
+              <header class="price-plan__header">
+                <h1 class="price-plan__title">Анлим</h1>
+                <p class="price-plan__price">9,99 USD</p>
+              </header>
+              <ul class="price-plan__options">
+                <li class="price-plan__option price-plan__option--included">Розовый фильтр</li>
+                <li class="price-plan__option price-plan__option--included">Смайлики</li>
+                <li class="price-plan__option price-plan__option--included">Комментарии</li>
+              </ul>
+            </article>
+          </div>
       </section>
 
       <article class="contacts">
@@ -178,5 +196,6 @@
           <img src="img/bg-map-mobile@1x.png">
       </section>
     </div>
+    <script src="js/main.js"></script>
   </body>
 </html>
