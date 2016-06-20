@@ -51,70 +51,107 @@
           </article>
         </div>
       </header>
-
       <article class="information">
         <header class="information-header">
           <p class="information-header__desc">Устали от серости мегаполиса?</p>
-          <p class="information-header__desc">Нам есть, что вам предложить!</p>
+          <p class="information-header__desc information-header__desc--padding">Нам есть, что вам предложить!</p>
         </header>
-        <section class="ad">
-          <p class="ad__title">Поднимает настроение</p>
-          <p class="ad__desc">
-            Приложение позволит вам победить оскееюю хандру
-            и депрессию буквально в несколько кликов!
-          </p>
+
+        <div class="ad-wrapper">
+          <section class="ad">
+            <p class="ad__title">Поднимает настроение</p>
+            <p class="ad__desc">
+              Приложение позволит вам победить оскееюю хандру
+              и депрессию буквально в несколько кликов!
+            </p>
+          </section>
+          <section class="ad">
+            <p class="ad__title">Меняет мир вокруг</p>
+            <p class="ad__desc">
+              Сделай снимок и украсьте его смайликом или текстовой подписью,
+              чтобы усилить эффект
+            </p>
+          </section>
+          <section class="ad">
+            <p class="ad__title">Заводит новых друзей</p>
+            <p class="ad__desc">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </section>
+        </div>
+
+        <section class="ad-effect">
+        <div class="center-wrapper">
+            <div class="ad-effect__logo">
+              <img src="http://placehold.it/240x280"" alt="24" width="240" height="280">
+            </div>
+            <div class="ad-effect__desc">
+              <h2 class="ad-effect__header">Эффект на 24 часа!</h2>
+              <p class="ad-effect__text">
+                Британские ученые провели исследования и доказали, что порожительный эффект
+                от использования приложения длится целые сутки!
+              </p>
+              <a href="" class="ad-effect__link">Узнать больше об исследовании</a>
+            </div>
+          </div>
         </section>
-        <section class="ad">
-          <p class="ad__title">Меняет мир вокруг</p>
-          <p class="ad__desc">
-            Сделай снимок и украсьте его смайликом или текстовой подписью,
-            чтобы усилить эффект
-          </p>
-        </section>
-        <section class="ad">
-          <p class="ad__title">Заводит новых друзей</p>
-          <p class="ad__desc">
-            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-          </p>
-        </section>
-        <footer class="information-footer">
-          <img src="img/iphone-screen-mobile@1x.png">
-        </footer>
+
       </article>
 
       <section class="review">
-        <div class="review-slider">
-          <!--- УПРАВЛЕНИЕ СЛАЙДАМИ! -->
-            <article class="review-slider__slide review-slider__slide--1">
-              <p class="review-slider__title">Николай Петров</p>
-              <p class="review-slider__desc">
-                Это приложение перевернуло мой мир и
-                позволило по-новому взглянуть на привычные серые вещи!
-                А еще я познакомился со своей будущей женой в комментариях к
-                выложенной фотографии!
-              </p>
-            </article>
-            <article class="review-slider__slide review-slider__slide--2">
-              <p class="review-slider__title">Николай Петров-2</p>
-              <p class="review-slider__desc">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Cum quisquam harum ab provident explicabo magni tempore quod
-                nostrum placeat beatae.
-              </p>
-            </article>
-            <article class="review-slider__slide review-slider__slide--3">
-              <p class="review-slider__title">Николай Петров-3</p>
-              <p class="review-slider__desc">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Sequi quaerat commodi ipsum corrupti quasi optio a vel consectetur, maxime sit.
-              </p>
-            </article>
+        <div class="center-wrapper">
+          <div class="review-slider__left-arrow">Влево</div>
+          <div class="review-slider__right-arrow">Вправо</div>
+          <div class="review-slider">
+            <div class="review-slider__wrapper">
+              <article class="review-slider__slide review-slider__slide--1">
+                <p class="review-slider__title">Николай Петров <span class="review-slider__title-info">25 лет, водитель трамвая</span> </p>
+                <p class="review-slider__desc">
+                  Это приложение перевернуло мой мир и
+                  позволило по-новому взглянуть на привычные серые вещи!
+                  А еще я познакомился со своей будущей женой в комментариях к
+                  выложенной фотографии!
+                </p>
+              </article>
+              <article class="review-slider__slide review-slider__slide--2">
+                <p class="review-slider__title">Николай Петров-2</p>
+                <p class="review-slider__desc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Cum quisquam harum ab provident explicabo magni tempore quod
+                  nostrum placeat beatae.
+                </p>
+              </article>
+              <article class="review-slider__slide review-slider__slide--3">
+                <p class="review-slider__title">Николай Петров-3</p>
+                <p class="review-slider__desc">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Sequi quaerat commodi ipsum corrupti quasi optio a vel consectetur, maxime sit.
+                </p>
+              </article>
+            </div>
+          </div>
         </div>
+
+        <div class="slide-control slide-control--review">
+          <label class="slide-radio">
+            <input type="radio" class="slide-control__toggle slide-control__toggle--slides-1" name="reviews" checked>
+            <span class="slide-control__state"></span>
+          </label>
+          <label class="slide-radio">
+            <input type="radio" class="slide-control__toggle slide-control__toggle--slides-2" name="reviews">
+            <span class="slide-control__state"></span>
+          </label>
+          <label class="slide-radio">
+            <input type="radio" class="slide-control__toggle slide-control__toggle--slides-3" name="reviews">
+            <span class="slide-control__state"></span>
+          </label>
+        </div>
+
       </section>
 
       <section class="prices">
         <!--- УПРАВЛЕНИЕ СЛАЙДЕРОМ! -->
-          <div class="slide-control">
+          <div class="slide-control slide-control--prices">
             <label class="slide-radio">
               <input type="radio" class="slide-control__toggle slide-control__toggle--slides-1" name="device">
               <span class="slide-control__state"></span>
@@ -130,6 +167,15 @@
           </div>
 
           <div class="price-plan__wrapper">
+            <article class="price-plan price-plan--default">
+              <header class="price-plan__header">
+              </header>
+              <ul class="price-plan__options">
+                <li class="price-plan__option price-plan__option--included">Розовый фильтр</li>
+                <li class="price-plan__option price-plan__option--absent">Смайлики</li>
+                <li class="price-plan__option price-plan__option--absent">Комментарии</li>
+              </ul>
+            </article>
             <article class="price-plan price-plan--slide-1">
               <header class="price-plan__header">
                 <h1 class="price-plan__title">База</h1>
@@ -167,34 +213,52 @@
       </section>
 
       <article class="contacts">
-        <header class="contacts-header">
-          <p class="contacts-header__desc">
-            Остались вопросы ?<br>
-            Свяжитесь с нами!
-          </p>
-        </header>
-        <section class="contacts-info">
-          <div class="contact">
-            <p class="contact__title">Звоните:</p>
-            <p class="contact__desc">
-              <a href="tel:+78125556666">+7 (812) 555-66-66</a>
+        <div class="center-wrapper">
+          <header class="contacts-header">
+            <p class="contacts-header__desc">
+              Остались вопросы ?<br>
+              Свяжитесь с нами!
             </p>
-          </div>
-          <div class="contact">
-            <p class="contact__title">Пишите:</p>
-            <p class="contact__desc">
-              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </p>
-          </div>
-          <div class="contact">
-            <p class="contact__title">Приезжайте в гости:</p>
-            <p class="contact__desc">ул. Большая<br>Конюшенная, 19/8</p>
-          </div>
-        </section>
+          </header>
+          <section class="contacts-info">
+            <div class="contact contact--tel">
+              <p class="contact__title">Звоните:</p>
+              <p class="contact__desc">
+                <a href="tel:+78125556666">+7 (812) 555-66-66</a>
+              </p>
+            </div>
+            <div class="contact contact--email">
+              <p class="contact__title">Пишите:</p>
+              <p class="contact__desc">
+                <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              </p>
+            </div>
+            <div class="contact contact--addres">
+              <p class="contact__title">Приезжайте в гости:</p>
+              <p class="contact__desc">ул. Большая<br>Конюшенная, 19/8</p>
+            </div>
+          </section>
+        </div>
       </article>
+
       <section class="map">
-          <img src="img/bg-map-mobile@1x.png">
+          <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9506.342003882497!2d30.313994563339186!3d59.94106524685633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1466447970134" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </section>
+
+      <footer class="page-footer page-footer--hide">
+        <div class="footer-logo">
+            <img src="img/logo-pink-blue-mobile.svg">
+        </div>
+        <div class="social">
+          <a href="#" class="social-link social-link--tw">Twitter</a>
+          <a href="#" class="social-link social-link--fb">Facebook</a>
+          <a href="#" class="social-link social-link--yo">Youtube</a>
+        </div>
+        <div class="copyright">
+          <a href="http://htmlacademy.ru" class="copyright__link">Разработано</a>
+        </div>
+      </footer>
+
     </div>
     <script src="js/main.js"></script>
   </body>

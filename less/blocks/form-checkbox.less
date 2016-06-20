@@ -2,18 +2,13 @@
 .form-checkbox {
   display: block;
   margin-bottom: 45px;
-  &:last-child {
-    margin-bottom: 0;
-  }
+  .clearfix();
+  cursor: pointer;
 
   @media @desktop-width {
-    display: inline-block;
-    vertical-align: top;
+    display: block;
     width: 260px;
-    margin-right: 29px;
-    &:nth-last-child(-n + 3) {
-      margin-bottom: 0;
-    }
+    margin-right: 0;
   }
 
 }
@@ -24,7 +19,7 @@
     display: block;
     position: absolute;
     width: 7px;
-    height: 19px;
+    height: 20px;
     border-bottom: 2px solid #d32c59;
     border-right: 2px solid #d32c59;
     transform: rotate(45deg);
@@ -37,12 +32,11 @@
 }
 
 .form-checkbox__state {
-  display: inline-block;
-  vertical-align: middle;
-  width: 37px;
-  height: 37px;
+  float: left;
+  width: 39px;
+  height: 39px;
   border: 2px solid #e5e5e5;
-  margin-right: 28px;
+  margin-right: 32px;
   border-radius: 3px;
   position: relative;
   background-color: #fff;
@@ -53,8 +47,12 @@
     border-color: #d22856;
   }
 
+  @media @tablet-width {
+    margin-right: 22px;
+  }
+
   @media @desktop-width {
-    margin-right: 18px;
+    margin-right: 21px;
   }
 
 }
@@ -62,4 +60,20 @@
 .form-checkbox__label {
   .text-size(18px);
   color: #283645;
+ // padding-left: 29px;
+ display: block;
+ overflow: hidden;
+ padding-top: 3px;
+
+  @media @tablet-width {
+   padding-top: 2px;
+  }
+  @media @tablet-width {
+    padding-top: 3px;
+  }
+}
+
+
+.flex-checkbox:last-child .form-checkbox:last-child {
+  margin-bottom: 0;
 }

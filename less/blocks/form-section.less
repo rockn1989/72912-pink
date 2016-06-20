@@ -2,15 +2,17 @@
 .form-section {
   border: none;
   position: relative;
+  padding: 0 20px;
   & legend {
     position: absolute;
+    overflow: hidden;
   }
   &--user-name {
-    margin-bottom: 29px;
+    margin-bottom: 28px;
   }
   &--progress {
-    margin-bottom: 25px;
-    padding: 115px 0 47px;
+    margin-bottom: 26px;
+    padding: 115px 20px 47px;
     background-color: #f2f2f2;
     & legend {
       top: 40px;
@@ -18,30 +20,40 @@
   }
   &--info {
     margin-bottom:40px;
+    padding: 0;
     & legend {
       display: none;
     }
   }
   &--application {
-    margin-bottom: 60px;
-    padding: 107px 0 40px;
+    margin-bottom: 0px;
+    padding: 109px 20px 40px;
     background-color: #f2f2f2;
     & legend {
       top: 40px;
+      left: 0;
+      right: 0;
     }
   }
   &--description {
-    margin-bottom: 41px;
+    //margin-bottom: 41px;
+    padding: 93px 20px 42px;
     & legend {
-      top: -35px;
+      top: 60px;
+      left: 0;
+      right: 0;
     }
   }
 
   @media @tablet-width {
+    padding: 0;
     &__wrapper {
       display: flex;
       flex-wrap: wrap;
       align-items: flex-start;
+    }
+    &--border {
+      border: 2px solid #e5e5e5;
     }
     & legend {
       position: static;
@@ -51,10 +63,9 @@
     &--description,
     &--application {
       width: 100%;
-      border: 2px solid #e5e5e5;
       padding: 48px 60px;
       background-color: transparent;
-      margin-bottom: 65px;
+      margin-bottom: 58px;
     }
     & p.form-section__title {
       display: none;
@@ -66,18 +77,23 @@
     &--user-name {
       order: 1;
       width: 100%;
+      margin-bottom: 0;
     }
     &--progress {
       order: 4;
+      padding: 44px 60px 50px;
     }
     &--info {
       order: 3;
+      padding: 39px 59px 27px 57px;
     }
     &--application {
       order: 2;
+      padding:  44px 60px 58px 58px;
     }
     &--description {
       order: 5;
+      padding: 38px 60px 47px 60px;
     }
   }
 
@@ -86,13 +102,18 @@
       display: flex;
       flex-wrap: wrap;
       align-items: flex-start;
+      margin-bottom: 8px;
     }
     &--user-name {
       width: 434px;
       margin-right: 35px;
     }
     &--progress {
+      padding: 44px 60px 57px;
       padding-right: 0;
+    }
+    &--description {
+      padding: 35px 60px;
     }
     &--application {
       width: 434px;

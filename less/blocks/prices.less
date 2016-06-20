@@ -1,12 +1,28 @@
 
 .prices {
   margin-bottom: 94px;
+  padding-top: 65px;
   position: relative;
   width: 320px;
-  min-height: 380px;
+  min-height: 445px;
   overflow: hidden;
-  border:1px solid black;
   background-color: #f2f2f2;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    height: 33px;
+    background: linear-gradient(to bottom right, transparent 49%, #f2f2f2 50%);
+    left: 0;
+    right: 0;
+    top: -33px;
+    z-index: 77 ;
+  }
+
+  @media @tablet-width {
+    width: 100%;
+  }
+
 }
 
 .price-plan__wrapper {
@@ -14,18 +30,61 @@
   position: absolute;
   .clearfix();
   left: -260px;
+
+  @media @tablet-width {
+    position: static;
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  @media @desktop-width {
+    padding: 0 130px;
+  }
+
 }
 
 .price-plan {
   width: 280px;
   float: left;
+
+  @media @tablet-width {
+    width: 153px;
+  }
+
+  @media @desktop-width {
+    width: 232px;
+  }
+
 }
+
+.price-plan--default {
+  display: none;
+  & .price-plan__option {
+    background-image: none;
+    text-transform: none;
+    text-indent: 0;
+  }
+  & .price-plan__header {
+    height: 80px;
+    background-color: transparent;
+  }
+  @media @tablet-width {
+    display: block;
+  }
+
+}
+
 
 .price-plan__header {
   background-color: #283645;
   text-align: center;
   color: #fff;
   padding: 17px 0;
+  border-right: 1px solid #e5e5e5;
+  @media @tablet-width {
+    height: 80px;
+    padding: 8px 0;
+  }
 }
 
 .price-plan__title {
@@ -33,10 +92,21 @@
   .text-size(18px);
   margin-bottom: 5px;
   text-transform: uppercase;
+
+  @media @tablet-width {
+    .text-size(16px, 30px);
+  }
+
 }
 
 .price-plan__price {
   .text-size(24px);
+
+  @media @tablet-width {
+    .text-size(18px);
+    font-weight: 300;
+  }
+
 }
 
 .price-plan__options {
@@ -45,6 +115,7 @@
   border: 1px solid #e5e5e5;
   background-color: #ffffff;
 }
+
 .price-plan__option {
   text-transform: uppercase;
   .text-size(14px);
@@ -59,4 +130,10 @@
   &--absent {
     background-image: url('../img/icon-no.svg');
   }
+
+  @media @tablet-width {
+    text-indent: -9999px;
+    background-position: center;
+  }
+
 }
