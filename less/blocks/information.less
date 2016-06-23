@@ -1,6 +1,9 @@
 
 .information {
   padding: 0 20px;
+  @media @tablet-width {
+
+  }
 }
 
 .information-header {
@@ -10,10 +13,28 @@
   text-align: center;
   padding-top: 45px;
   margin-bottom: 125px;
+  @media @tablet-width {
+
+  }
 }
 
 .information-header__desc {
   margin-bottom: 45px;
+
+  @media @tablet-width {
+    margin-bottom: 0;
+    .text-size(40px, 50px);
+    &--padding {
+      padding: 0 150px;
+    }
+  }
+
+  @media @desktop-width {
+    &--padding {
+      padding:  0 305px;
+    }
+  }
+
 }
 
 .information-footer {

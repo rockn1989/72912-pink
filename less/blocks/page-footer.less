@@ -1,6 +1,7 @@
 
 .page-footer {
   text-align: center;
+
   @media @tablet-width {
     display: flex;
     justify-content: space-between;
@@ -11,8 +12,15 @@
   @media @desktop-width {
     padding: 95px 130px 20px;
   }
-
 }
+
+.page-footer--hide {
+  display: none;
+  @media @desktop-width {
+    display: flex;
+  }
+}
+
 
 .footer-logo {
   margin-bottom: 34px;

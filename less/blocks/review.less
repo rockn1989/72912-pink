@@ -2,15 +2,141 @@
 .review {
   text-align: center;
   color:#000;
+  padding-top: 50px;
+  padding-bottom: 120px;
+  overflow: hidden;
+  position: relative;
+  @media @tablet-width {
+    padding-bottom: 75px;
+  }
+
+  @media @desktop-width {
+    min-height: 495px;
+    padding: 200px 130px 0;
+  }
+
+}
+
+.review .center-wrapper {
+  position: relative;
+}
+.review-slider__wrapper {
+  .clearfix();
+  width: 840px;
+
+  @media @tablet-width {
+    width: 2520px;
+    position: absolute;
+    transition: all 3s ease;
+  }
+
+}
+.review-slider {
+  padding: 0 20px;
+  position: relative;
+  //width: 840px;
+  height: 210px;
+  overflow: hidden;
+  text-align: center;
+  margin: auto;
+  .clearfix();
+
+  @media @tablet-width {
+   // width: 2520px;
+   padding: 0;
+  }
+
+  @media @desktop-width {
+    padding: 0 20px;
+  }
+
+}
+
+.review-slider__slide {
+  float: left;
+  width: 280px;
+  margin-right: 20px;
+
+  @media @tablet-width {
+    width: 620px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media @desktop-width {
+    margin-right: 50px;
+  }
+
 }
 
 .review-slider__title {
   font-weight: bold;
   .text-size(18px);
   margin-bottom: 30px;
+
+  @media @tablet-width {
+    order: 2;
+    margin-bottom: 0;
+  }
+
+}
+
+.review-slider__title-info {
+  .text-size(14px);
+  color: #283645;
+  display: none;
+
+  @media @tablet-width {
+    display: block;
+  }
+
 }
 
 .review-slider__desc {
   font-weight: normal;
-  .text-size(14px);
+
+  @media @tablet-width {
+    order: 1;
+    margin-bottom: 55px;
+    text-align: center;
+    .text-size(18px);
+  }
+
+}
+
+
+.review-slider__left-arrow,
+.review-slider__right-arrow {
+  width: 25px;
+  height: 45px;
+  position: absolute;
+  background: #f2f2f2;
+  display: none;
+  cursor: pointer;
+  text-indent: -9999px;
+  @media @desktop-width {
+    display: block;
+    &:after {
+      contet:'';
+      display: block;
+      width: 10px;
+      height: 10px;
+      background-color: red;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+}
+
+
+.review-slider__left-arrow {
+  top: 45%;
+  left: 0;
+}
+
+.review-slider__right-arrow {
+  top: 45%;
+  right: 0;
 }

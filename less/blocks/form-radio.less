@@ -1,7 +1,8 @@
 
 .form-radio {
   display: block;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
+  cursor: pointer;
   &:last-child {
     margin-bottom: 0;
   }
@@ -26,12 +27,12 @@
 }
 
 .form-radio__state {
-  display: inline-block;
-  vertical-align: middle;
-  width: 35px;
-  height: 35px;
+  display: block;
+  float: left;
+  width: 39px;
+  height: 39px;
   border: 2px solid #e5e5e5;
-  margin-right: 30px;
+  margin-right: 31px;
   border-radius: 3px;
   position: relative;
   border-radius: 50%;
@@ -42,9 +43,17 @@
   &:active {
     border-color: #d22856;
   }
+
+  @media @tablet-width {
+    margin-right: 22px;
+  }
+
 }
 
 .form-radio__label {
-  .text-size(text, 18px);
+  .text-size(18px);
   color: #283645;
+  display: block;
+  overflow: hidden;
+  padding-top: 3px;
 }

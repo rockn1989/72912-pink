@@ -2,7 +2,7 @@
 .slide-control {
   position: absolute;
   bottom: 37px;
-  left: 132px;
+  left: 117px;
 }
 
 .slide-control__toggle {
@@ -26,3 +26,22 @@
   cursor: pointer;
 }
 
+.slide-control--review {
+  bottom: 55px;
+  @media @tablet-width {
+    left: 45%;
+    bottom: 30px;
+  }
+
+  @media @desktop-width {
+    display: none;
+  }
+
+}
+
+
+.slide-control--prices {
+  @media @tablet-width {
+    display: none;
+  }
+}

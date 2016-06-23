@@ -13,18 +13,25 @@
     }
     &--info {
       flex-direction: column;
-      margin-bottom: 35px;
+      margin-bottom: 31px;
       width: 100%;
       & .form-input__field {
         order: -1;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         padding-right: 62px;
         background: linear-gradient(to right, #ffffff 88%, #e5e5e5 88% );
+      }
+      & .form-input__label {
+        padding-left: 20px;
       }
       &:last-child {
         margin-bottom: 0;
         margin-right: 0;
       }
+    }
+
+    &--user-name {
+      margin-bottom: 54px;
     }
   }
 
@@ -33,16 +40,26 @@
       margin-right: 70px;
       margin-bottom: 0;
       & .form-input__label {
-        margin-left: 20px;
+        margin-left: 0px;
+        padding-left: 18px;
       }
       & .form-input__field {
         padding-right: 64px;
-        margin-bottom: 21px;
-        background: linear-gradient(to right, #ffffff 86%, #e5e5e5 86% );
+        padding-bottom: 15px;
+        margin-bottom: 11px;
+        background: linear-gradient(to right, #ffffff 84%, #e5e5e5 84% );
       }
     }
   }
+  &--user-name {
+    & .form-input__label {
 
+      @media @desktop-width {
+        margin-right: 18px;
+      }
+
+    }
+  }
 }
 
 .form-input__label {
@@ -53,10 +70,8 @@
   padding: 5px 22px;
 
   @media @tablet-width {
-    &--user-name {
-      padding: 0;
-      padding-right: 22px;
-    }
+    padding: 0;
+    padding-right: 20px;
   }
 
   @media @desktop-width {
@@ -69,9 +84,10 @@
 .form-input__field {
   .text-size(18px);
   color: #283645;
-  padding: 14px 30px 13px 24px;
+  padding: 14px 30px 13px 20px;
   border: 2px solid #e5e5e5;
   border-radius: 3px;
+  width: 100%;
   &:hover {
     border-color: #000;
   }
