@@ -2,13 +2,16 @@
 .slide-control {
   position: absolute;
   bottom: 37px;
-  left: 117px;
+  left: 130px;
 }
 
 .slide-control__toggle {
   display: none;
   &:checked ~.slide-control__state {
-    border:4px solid #000;
+    border:3px solid #000;
+    background-color: transparent;
+    width: 11px;
+    height: 11px;
   }
   &--slides-1:checked +.price-plan__wrapper{
     left: 280px;
@@ -17,9 +20,10 @@
 }
 
 .slide-control__state {
-  width: 13px;
-  height: 13px;
+  width: 6px;
+  height: 6px;
   display: inline-block;
+  vertical-align: middle;
   border-radius: 50%;
   background-color: #b5b9be;//b5b9be
   margin-right: 14px;
@@ -27,10 +31,10 @@
 }
 
 .slide-control--review {
-  bottom: 55px;
+  bottom: -61px;
   @media @tablet-width {
     left: 45%;
-    bottom: 30px;
+    bottom: -56px;
   }
 
   @media @desktop-width {
@@ -41,6 +45,8 @@
 
 
 .slide-control--prices {
+  bottom: 43px;
+  left: 133px;
   @media @tablet-width {
     display: none;
   }

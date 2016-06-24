@@ -40,7 +40,7 @@
   width: 100%;
   padding: 16px 0;
   margin: 10px 0;
-  border-radius: 25px;
+  border-radius: 50px;
   background: transparent;
   outline: none;
   &:hover {
@@ -57,6 +57,13 @@
     &:active {
       color:#df7c92;
     }
+    @media @tablet-width {
+      margin-bottom: 12px;
+    }
+    @media @desktop-width {
+      margin: 0;
+    }
+
   }
   &--silent {
     color: #dddfe0;
@@ -97,6 +104,7 @@
     }
     &--download {
       margin-bottom: 65px;
+      .text-size(21px, 18px);
     }
   }
 

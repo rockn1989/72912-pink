@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="wrapper">
+
     <header class="page-header">
 
         <nav class="main-nav">
@@ -27,7 +27,7 @@
           </div>
         </nav>
 
-      <div class="description">
+      <div class="description center-wrapper">
         <p class="description__text">
           Конкурс на самое безбашеное путешествие с Пинк
         </p>
@@ -36,29 +36,34 @@
 
     <article class="page-form">
       <header class="form-header">
-        <h2 class="form-header__desc">
-          Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
-          <span class="form-header__desc--attention">
-            Пожалуйста, заполните форму ниже:
-          </span>
-        </h2>
+        <div class="center-wrapper">
+          <h2 class="form-header__desc">
+            Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
+            <span class="form-header__desc--attention">
+              Пожалуйста, заполните форму ниже:
+            </span>
+          </h2>
+        </div>
       </header>
-      <form action="/" method="post" class="interview">
+
+      <form action="/" method="post" class="interview center-wrapper">
         <div class="form-section__wrapper">
+
           <fieldset class="form-section form-section--user-name">
-            <div class="form-input form-input--user-name">
-              <label class="form-input__label" for="surname">Фамилия:</label>
-              <input class="form-input__field" type="text" id="surname" name="surname" placeholder="Укажите фамилию">
-            </div>
-            <div class="form-input form-input--user-name">
-              <label class="form-input__label" for="name">Имя:</label>
-              <input class="form-input__field" type="text" id="name" name="name" placeholder="Введите ваше имя">
-            </div>
-            <div class="form-input form-input--user-name">
-              <label class="form-input__label" for="patronymic">Отчество:</label>
-              <input class="form-input__field" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
-            </div>
+              <div class="form-input form-input--user-name">
+                <label class="form-input__label" for="surname">Фамилия:</label>
+                <input class="form-input__field" type="text" id="surname" name="surname" placeholder="Укажите фамилию">
+              </div>
+              <div class="form-input form-input--user-name">
+                <label class="form-input__label" for="name">Имя:</label>
+                <input class="form-input__field" type="text" id="name" name="name" placeholder="Введите ваше имя">
+              </div>
+              <div class="form-input form-input--user-name">
+                <label class="form-input__label" for="patronymic">Отчество:</label>
+                <input class="form-input__field" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
+              </div>
           </fieldset>
+
           <fieldset class="form-section form-section--progress form-section--border">
             <legend class="form-section__title" align="center">Ваши безбашенные достижения в путешествии</legend>
             <div class="flex-wrapper flex-wrapper--wrap-checkbox">
@@ -100,19 +105,21 @@
               </div>
             </div>
           </fieldset>
+
           <fieldset class="form-section form-section--info form-section--border">
             <legend class="form-section__title">Контактная информация</legend>
             <div class="flex-wrapper">
               <div class="form-input form-input--info">
                 <label class="form-input__label" for="tel">Номерок телефончика</label>
-                <input class="form-input__field" type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста">
+                <input class="form-input__field form-input__field--bg-tel" type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста">
               </div>
               <div class="form-input form-input--info">
                 <label class="form-input__label" for="email">Адресок почты</label>
-                <input class="form-input__field" type="email" id="email" name="email" placeholder="E-mail, пожалуйста">
+                <input class="form-input__field form-input__field--bg-email" type="email" id="email" name="email" placeholder="E-mail, пожалуйста">
               </div>
             </div>
           </fieldset>
+
           <fieldset class="form-section form-section--application form-section--border">
             <legend class="form-section__title">С каким приложением путешествовали?</legend>
             <label class="form-radio">
@@ -131,12 +138,14 @@
               <span class="form-radio__label">Windows Phone</span>
             </label>
           </fieldset>
+
           <fieldset class="form-section form-section--description form-section--border">
             <legend class="form-section__title form-section__title--margin">Опишите свои эмоции</legend>
             <div class="form-textarea">
               <textarea class="form-textarea__field" name="message" placeholder=" Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
           </fieldset>
+
         </div>
         <div class="flex-wrapper flex-wrapper--tbl">
           <button type="submit" class="button button--send">Отправить форму</button>
@@ -165,22 +174,29 @@
           </div>
         </div>
       </form>
+
     </article>
 
     <footer class="page-footer">
-      <div class="footer-logo">
-          <img src="img/logo-pink-blue-mobile.svg">
-      </div>
-      <div class="social">
-        <a href="#" class="social-link social-link--tw">Twitter</a>
-        <a href="#" class="social-link social-link--fb">Facebook</a>
-        <a href="#" class="social-link social-link--yo">Youtube</a>
-      </div>
-      <div class="copyright">
-        <a href="http://htmlacademy.ru" class="copyright__link">Разработано</a>
+    <div class="center-wrapper">
+        <div class="footer-logo">
+          <picture>
+            <source media="(min-width:1200px)" srcset="img/logo-pink-blue-desktop.svg">
+            <source media="(min-width:700px)" srcset="img/logo-pink-blue-mobile.svg">
+            <img src="img/logo-pink-blue-mobile.svg">
+          </picture>
+        </div>
+        <div class="social">
+          <a href="#" class="social-link social-link--tw">Twitter</a>
+          <a href="#" class="social-link social-link--fb">Facebook</a>
+          <a href="#" class="social-link social-link--yo">Youtube</a>
+        </div>
+        <div class="copyright">
+          <a href="http://htmlacademy.ru" class="copyright__link">Разработано</a>
+        </div>
       </div>
     </footer>
-  </div>
+
   <script src="js/main.js"></script>
 </body>
 </html>

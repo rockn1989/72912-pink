@@ -27,3 +27,13 @@
   font-size: @fontsize;
   line-height: 30px;
 }
+
+
+.background-retina(@filename, @fileformat) {
+  background-image: url("../img/@{filename}@1x.@{fileformat}");
+
+  @media @retina-dpi, @retina-ppx {
+    background-image: url("../img/@{filename}@2x.@{fileformat}");
+  }
+
+}
