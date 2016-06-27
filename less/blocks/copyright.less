@@ -1,8 +1,10 @@
 
 .copyright {
   text-align: center;
+  padding-left: 40px;
   @media @tablet-width {
     padding-top: 10px;
+    padding-left: 0;
   }
 }
 
@@ -14,10 +16,28 @@
   display: inline-block;
   padding:8px 0;
   padding-right: 42px;
-  background: url("../img/logo-htmlacademy.svg") top 50% right 0 no-repeat;
+
+  @media @tablet-width {
+    padding-right: 0;
+  }
 
   @media @desktop-width {
-  .text-size(18px);
+    .text-size(18px);
+    padding-right: 0;
+  }
+
+}
+
+.copyright__academy-logo {
+  vertical-align: middle;
+
+  fill: #d22856;
+
+  &:hover {
+    fill: #283645;
+  }
+  &:active {
+    fill: #bec2c7;
   }
 
 }

@@ -7,14 +7,17 @@
   overflow: hidden;
   position: relative;
   margin-bottom: 5px;
+
   @media @tablet-width {
     padding-bottom: 75px;
     padding-top: 100px;
+    margin-bottom: 44px;
   }
 
   @media @desktop-width {
     min-height: 495px;
     padding: 187px 130px 0;
+    margin-bottom: 4px;
     background-image: url("../img/icon-quotes.svg");
     background-repeat: no-repeat;
     background-position: center 70px;
@@ -33,10 +36,8 @@
 }
 .review-slider__wrapper {
   .clearfix();
- // width: 840px;
 
   @media @tablet-width {
-    //width: 2520px;
     position: absolute;
     transition: all 3s ease;
   }
@@ -56,27 +57,26 @@
   }
 
   @media @desktop-width {
-
     padding: 0 20px;
-    //margin-left: 90px;
-    //margin-right: 90px;
   }
 
 }
 
 .review-slider__slide {
   float: left;
-  //width: 280px;
   margin-right: 20px;
   width: 100%;
+
   @media @tablet-width {
-   // width: 620px;
     display: flex;
     flex-direction: column;
+    width: 616px;
   }
 
   @media @desktop-width {
+    width: 754px;
     margin-right: 50px;
+    min-height: 185px;
   }
 
 }
@@ -164,7 +164,9 @@
 
 
 .quote {
+
   @media @desktop-width {
     display: none;
   }
+
 }

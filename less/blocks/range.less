@@ -32,6 +32,31 @@
   background: #fff;
   border: 2px solid #ce2856;
   border-radius: 50%;
+
+  @media @tablet-width {
+    &&--crop {
+      right: 40px;
+    }
+    &&--fill {
+      right: 161px;
+    }
+    &&--contrast {
+      right: 45%;
+    }
+  }
+
+  @media @desktop-width {
+    &&--crop {
+      right: 72px;
+    }
+    &&--fill {
+      right: 27px;
+    }
+    &&--contrast {
+      right: 39%;
+    }
+  }
+
   &:hover {
     cursor: pointer;
   }
