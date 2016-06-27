@@ -1,17 +1,39 @@
 
 .download-app {
-  padding: 18px 0 28px 0;
   background: #1d2631;
   position: relative;
   z-index: 50;
+
+  @media (max-width: 699px) {
+    width: auto;
+  }
+
   @media @tablet-width {
-    width: 300px;
+  //  width: 700px;
+    margin: auto;
     background-color: transparent;
-    padding: 100px 0;
   }
 
   @media @desktop-width {
-    //width: 300px;
+   // width: 1200px;
+  }
+
+}
+
+
+.download-app__wrapper  {
+  padding: 14px 0 29px;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media @tablet-width {
+    margin: 0;
+    padding: 90px 0 110px;
+  }
+
+  @media @desktop-width {
+    padding: 110px 0 125px;
   }
 
 }
@@ -25,16 +47,37 @@
     color:#fff;
     text-align: center;
     font-weight: 300;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
+  }
+
+  @media @desktop-width {
+    .text-size(50px, 60px);
+    margin-bottom: 40px;
   }
 
 }
 
+.donwload-app__btn {
+  padding: 4px 5px 0 0;
+}
+
 .download-app__links {
-  margin-bottom: 27px;
-  padding: 0 35px;
+  margin-bottom: 18px;
+  padding: 0 38px;
   display: flex;
   justify-content: space-between;
+
+  @media @tablet-width {
+    margin-bottom: 33px;
+    padding: 4px 47px 0;
+  }
+
+  @media @desktop-width {
+    margin-bottom: 51px;
+    padding: 0 47px 0;
+  }
+
+
 }
 
 .download-app__link {
@@ -52,7 +95,7 @@
 }
 
 .download-app__footer {
-  padding: 0 20px;
+ // padding: 0 20px;
 }
 
 .download-app__footer-desc {
@@ -60,5 +103,10 @@
   .text-size(14px, 24px);
   color:#fff;
   text-align: center;
+
+  @media @tablet-width {
+    .text-size(18px, 24px);
+  }
+
 }
 

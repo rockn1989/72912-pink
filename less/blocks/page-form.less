@@ -1,27 +1,30 @@
 
 .page-form {
   margin-bottom: 55px;
-  //padding: 0 20px;
   font-weight: normal;
   background: #fff;
 
   @media @tablet-width {
-    padding: 0 40px;
+    margin-bottom: 25px;
   }
 
   @media @desktop-width {
-    padding: 0 130px;
     margin-bottom: 0;
   }
 
 }
 
 .form-header {
-  padding: 45px 0 32px;
+  padding: 45px 0 29px;
 
   @media @tablet-width {
-    padding: 89px 60px 73px;
+    padding: 89px 0 71px;
   }
+
+  @media @desktop-width {
+    padding: 91px 0 86px;
+  }
+
 
 }
 
@@ -30,20 +33,20 @@
   font-weight: normal;
   text-align: center;
   color:#283645;
-  padding: 0 20px;
   &--attention {
     display: none;
   }
 
   @media @tablet-width {
     .text-size(18px);
-    padding: 0;
+    padding: 0 40px;
     &--attention {
       display: block;
     }
   }
 
   @media @desktop-width {
+    padding: 0 75px;
     &--attention {
       display: inline;
     }

@@ -1,10 +1,10 @@
 
 .contacts {
-  padding: 0 20px;
+  //padding: 0 20px;
   text-align: center;
   position: relative;
   &:after {
-    content: '';
+    //content: '';
     position: absolute;
     height: 63px;
     background: linear-gradient(to top right, transparent 49%, #f2f2f2 50%);
@@ -21,13 +21,16 @@
 
 
 .contacts-header {
+  margin-bottom: 32px;
 
   @media @tablet-width {
-    margin-bottom: 60px;
+    margin-bottom: 37px;
   }
 
-  @media @tablet-width {
-    margin-bottom: 70px;
+  @media @desktop-width {
+    padding-top: 14px;
+    padding-left: 10px;
+    margin-bottom: 54px;
   }
 }
 
@@ -35,11 +38,16 @@
   font-weight: 300;
   .text-size(24px);
   color:#283645;
-  margin-bottom: 45px;
+  padding-left: 2px;
 
   @media @tablet-width {
     .text-size(40px, 50px);
   }
+
+  @media @desktop-width {
+    .text-size(50px, 60px);
+  }
+
 }
 
 .contacts-info {
@@ -55,15 +63,24 @@
 
 
 .contact {
-  margin-bottom: 28px;
-
+  margin-bottom: 19px;
+  padding-left: 2px;
+  &--email {
+    padding-left: 13px;
+    margin-bottom: 24px;
+  }
   @media @tablet-width {
     &--tel {
       order: 1;
       margin-right: 100px;
+      padding-left: 44px;
     }
     &--email {
       order: 2;
+      margin-bottom: 44px;
+      & .contact__title {
+        padding-right: 44px;
+      }
     }
     &--addres {
       order: 3;
@@ -80,6 +97,7 @@
     }
     &--addres {
       order: 2;
+      padding-left: 18px;
     }
   }
 
@@ -87,16 +105,17 @@
 
 .contact__title {
   font-weight: bold;
-  .text-size(24px);
-  margin-bottom: 13px;
+  .text-size(18px, 24px);
+  margin-bottom: 2px;
+  padding-left: 2px;
 
   @media @tablet-width {
     .text-size(18px);
-    margin-bottom: 15px;
+    margin-bottom: 1px;
   }
 
   @media @desktop-width {
-    margin-bottom: 35px;
+    margin-bottom: 20px;
   }
 
 }

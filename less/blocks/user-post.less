@@ -1,11 +1,14 @@
 
 .user-post {
   margin-bottom: 14px;
-
+  & img {
+    display: block;
+    margin: auto;
+  }
   @media @tablet-width {
     width: 300px;
     margin-right: 20px; // по макету 20пх
-
+    margin-bottom: 18px;
     &:nth-child(2n) {
       margin-right: 0;
     }
@@ -27,10 +30,14 @@
 
 }
 
+
+
 .user-post__wrapper {
   padding: 0 20px;
-
+  width: 320px;
+  margin: auto;
   @media @tablet-width {
+    width: 700px;
     display: flex;
     justufy-content: space-between;
     flex-wrap: wrap;
@@ -38,18 +45,17 @@
   }
 
   @media @desktop-width {
+    width: 1200px;
     padding: 0 130px;
   }
 
 }
 
 .user-post__photo {
-  //padding: 0 20px;
-  margin-bottom: -5px;
 
   @media @tablet-width {
     min-height: 300px;
-    background: #c2c2c2; // картинка растянуться должна!
+    //background: #c2c2c2; // картинка растянуться должна!
     margin-bottom: 0;
   }
 
@@ -60,44 +66,7 @@
 }
 
 
-.user-post__photo--best {
 
-  margin-bottom: 0;
-  padding: 0;
-  position: relative;
-
-  @media @tablet-width {
-    min-height: 510px;
-    background-color: #c5c5c5;
-  }
-
-  &:after {
-    content: 'панорама дня';
-    display: block;
-    width: 140px;
-    height: 35px;
-    background-color: #d22856;
-    color: #fff;
-    position: absolute;
-    top: 0;
-    right: 20px;
-    font-weight: bold;
-    .text-size(12px,35px);
-    text-align: center;
-    text-transform: uppercase;
-
-   @media @tablet-width {
-    top: 60px;
-    right: 40px;
-   }
-
-   @media @desktop-width {
-    top: 55px;
-    right: 130px;
-   }
-
-  }
-}
 
 
 .user-post__desc-wrapper {
@@ -113,19 +82,25 @@
 }
 
 .user-post__description {
-  padding:15px 13px 25px 15px;
+  padding:17px 13px 25px 15px;
   text-align: left;
   background-color: #f2f2f2;
+
   @media @tablet-width {
-    padding: 30px 27px;
+    padding: 25px 27px;
   }
+
+  @media @desktop-width {
+    padding: 24px 27px;
+  }
+
 }
 
 .user-post__title {
   font-weight: bold;
   .text-size(14px, 24px);
   display: inline-block;
-  margin-right: 5px;
+  margin-right: 2px;
 }
 
 .user-post__date {
@@ -138,7 +113,7 @@
   font-weight: normal;
   .text-size(14px, 24px);
   text-align: left;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   clear: both;
 
   @media @tablet-width {
@@ -150,7 +125,7 @@
 .user-post__likes {
   color: #d22856;
   .text-size(12px, 24px);
-  padding-left: 30px;
+  padding-left: 33px;
   text-transform: uppercase;
   background: url('../img/icon-heart.svg') top 45% left 0 no-repeat;
 
@@ -163,25 +138,43 @@
 
 
 .user-post--best {
+  margin-bottom: 13px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+
 
   @media @tablet-width {
-      width: 100%;
-      margin-bottom: 50px;
-      margin-left: 0;
+    width: 700px;
+    margin: auto !important;
+  }
+
+  @media @desktop-width {
+    width: 1200px;
   }
 
   .user-post__desc-wrapper {
-     @media @tablet-width {
-        padding: 0 40px;
-     }
+    margin: auto;
+    padding: 0 20px;
+    margin-bottom: 23px;
 
-     @media @desktop-width {
-        padding: 0 130px;
-        min-height: 0;
-     }
+    @media @tablet-width {
+      width: 700px;
+      padding: 0 40px;
+      margin: 0 auto 22px;
+    }
+
+    @media @desktop-width {
+      width: 1200px;
+      padding: 0 130px;
+      min-height: 0;
+      margin-bottom: 52px;
+    }
+
   }
 
   .user-post__header {
+    margin-bottom: 1px;
     @media @tablet-width {
         float: left;
         width: 50%;
@@ -189,12 +182,22 @@
   }
 
   .user-post__description {
+     padding: 15px 13px 17px 15px;;
+
     @media @tablet-width {
         .clearfix();
         position: relative;
+        padding: 24px 13px 11px 26px;
     }
-  }
 
+    @media @desktop-width {
+      padding: 19px 13px 11px 26px;
+    }
+
+  }
+  & .user-post__title {
+    //margin-right: 2px;
+  }
   .user-post__text {
     @media @desktop-width {
         min-height: 0;
@@ -202,12 +205,61 @@
   }
 
   .user-post__likes {
+
     @media @tablet-width {
         position: absolute;
-        top: 30px;
-        right: 27px;
+        top: 25px;
+        right: 33px;
         padding-right: 27px;
     }
+
+    @media @desktop-width {
+      top: 21px;
+      right: 35px;
+    }
+
   }
+
+  .user-post__photo {
+
+    margin-bottom: 0;
+    padding: 0;
+    position: relative;
+    & img {
+      display: block;
+    }
+    @media @tablet-width {
+      min-height: 510px;
+    }
+
+    &:after {
+      content: 'панорама дня';
+      display: block;
+      width: 140px;
+      height: 35px;
+      background-color: #d22856;
+      color: #fff;
+      position: absolute;
+      top: 0;
+      right: 20px;
+      font-weight: bold;
+      .text-size(12px,35px);
+      text-align: center;
+      text-transform: uppercase;
+
+     @media @tablet-width {
+      top: 60px;
+      right: 40px;
+     }
+
+     @media @desktop-width {
+      top: 55px;
+      right: 130px;
+     }
+
+    }
+  }
+
+
 
 }

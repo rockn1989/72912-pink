@@ -2,39 +2,48 @@
 .review {
   text-align: center;
   color:#000;
-  padding-top: 50px;
+  padding-top: 42px;
   padding-bottom: 120px;
   overflow: hidden;
   position: relative;
+  margin-bottom: 5px;
   @media @tablet-width {
     padding-bottom: 75px;
+    padding-top: 100px;
   }
 
   @media @desktop-width {
     min-height: 495px;
-    padding: 200px 130px 0;
+    padding: 187px 130px 0;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: center 70px;
   }
 
 }
 
 .review .center-wrapper {
   position: relative;
+
+  @media @desktop-width {
+    width: 940px;
+    padding: 0 75px;
+  }
+
 }
 .review-slider__wrapper {
   .clearfix();
-  width: 840px;
+ // width: 840px;
 
   @media @tablet-width {
-    width: 2520px;
+    //width: 2520px;
     position: absolute;
     transition: all 3s ease;
   }
 
 }
 .review-slider {
-  padding: 0 20px;
   position: relative;
-  //width: 840px;
   height: 210px;
   overflow: hidden;
   text-align: center;
@@ -42,23 +51,26 @@
   .clearfix();
 
   @media @tablet-width {
-   // width: 2520px;
-   padding: 0;
+    padding: 0;
+    height: 180px;
   }
 
   @media @desktop-width {
+
     padding: 0 20px;
+    //margin-left: 90px;
+    //margin-right: 90px;
   }
 
 }
 
 .review-slider__slide {
   float: left;
-  width: 280px;
+  //width: 280px;
   margin-right: 20px;
-
+  width: 100%;
   @media @tablet-width {
-    width: 620px;
+   // width: 620px;
     display: flex;
     flex-direction: column;
   }
@@ -72,11 +84,15 @@
 .review-slider__title {
   font-weight: bold;
   .text-size(18px);
-  margin-bottom: 30px;
+  margin-bottom: 14px;
 
   @media @tablet-width {
     order: 2;
     margin-bottom: 0;
+  }
+
+  @media @desktop-width {
+    .text-size(24px, 30px);
   }
 
 }
@@ -90,14 +106,18 @@
     display: block;
   }
 
+  @media @desktop-width {
+    .text-size(18px);
+  }
+
 }
 
 .review-slider__desc {
   font-weight: normal;
-
+  .text-size(14px, 29px);
   @media @tablet-width {
     order: 1;
-    margin-bottom: 55px;
+    margin-bottom: 35px;
     text-align: center;
     .text-size(18px);
   }
@@ -110,10 +130,11 @@
   width: 25px;
   height: 45px;
   position: absolute;
-  background: #f2f2f2;
   display: none;
   cursor: pointer;
   text-indent: -9999px;
+  background-repeat: no-repeat;
+  top: 15%;
   @media @desktop-width {
     display: block;
     &:after {
@@ -132,11 +153,18 @@
 
 
 .review-slider__left-arrow {
-  top: 45%;
   left: 0;
+  background-image: url("../img/icon-review-arrow-left.svg");
 }
 
 .review-slider__right-arrow {
-  top: 45%;
   right: 0;
+  background-image: url("../img/icon-review-arrow-right.svg");
+}
+
+
+.quote {
+  @media @desktop-width {
+    display: none;
+  }
 }
