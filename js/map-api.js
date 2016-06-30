@@ -16,14 +16,14 @@
     });
 
     var infowindow = new google.maps.InfoWindow({
-      content: 'Большая Конюшенная ул., 19, Санкт-Петербург'
+      content: "Большая Конюшенная ул., 19, Санкт-Петербург"
     });
 
-    google.maps.event.addListener(marker, 'click', function() {
+    google.maps.event.addListener(marker, "click", function() {
       infowindow.open(map, marker);
     });
 
-    google.maps.event.addListener(map, 'zoom_changed', function(){
+    google.maps.event.addListener(map, "zoom_changed", function(){
         map.setCenter( marker.getPosition() );
     });
 

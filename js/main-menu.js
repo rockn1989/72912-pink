@@ -1,12 +1,12 @@
 
 (function() {
 
-  var menuNav = document.querySelector('.main-nav'),
-      openMenu = document.querySelector('.main-nav__open-menu');
+  var menuNav = document.querySelector(".main-nav"),
+      openMenu = document.querySelector(".main-nav__open-menu");
 
   if(menuNav) {
-    menuNav.classList.remove('main-nav--open');
-    menuNav.classList.remove('main-nav__list--no-js');
+    menuNav.classList.remove("main-nav--open");
+    menuNav.classList.remove("main-nav__list--no-js");
   }
 
 
@@ -14,11 +14,11 @@
 
     e.preventDefault();
 
-    menuNav.classList.toggle('main-nav--open');
+    menuNav.classList.toggle("main-nav--open");
 
   }
 
-  openMenu.addEventListener('click', menuToggle);
+  openMenu.addEventListener("click", menuToggle);
 
 })();
 
