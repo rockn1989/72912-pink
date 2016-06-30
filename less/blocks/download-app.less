@@ -9,14 +9,10 @@
   }
 
   @media @tablet-width {
-  //  width: 700px;
     margin: auto;
     background-color: transparent;
   }
 
-  @media @desktop-width {
-   // width: 1200px;
-  }
 
 }
 
@@ -28,12 +24,13 @@
   margin-right: auto;
 
   @media @tablet-width {
+    width: 300px;
     margin: 0;
     padding: 90px 0 110px;
   }
 
   @media @desktop-width {
-    padding: 110px 0 125px;
+    padding: 110px 0 121px;
   }
 
 }
@@ -83,19 +80,15 @@
 .download-app__link {
   width: 45px;
   height: 60px;
-  &--apple {
+  &&--apple {
     background: url('../img/logo-apple.svg') no-repeat;
   }
-  &--android {
+  &&--android {
     background: url('../img/logo-android.svg') top 10px left 0 no-repeat;
   }
-  &--windows {
+  &&--windows {
     background: url('../img/logo-microsoft.svg') top 13px left 0 no-repeat;
   }
-}
-
-.download-app__footer {
- // padding: 0 20px;
 }
 
 .download-app__footer-desc {

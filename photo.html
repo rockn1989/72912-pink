@@ -5,23 +5,42 @@
     <title>PINK: Фотографии</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/picturefill.js"></script>
+    <script src="js/svg4everybody.js"></script>
   </head>
   <body>
 
       <header class="page-header">
 
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--open main-nav--no-js">
           <div class="center-wrapper">
             <div class="header-flex-wrapper">
                 <div class="main-nav__header">
-                    <a href="/" class="main-nav__logo">На главную</a>
-                    <a href="" class="main-nav__open-menu">Открыть меню</a>
+                    <a href="index.html" class="main-nav__logo">
+                      <svg width="80px" height="30px" class="header-logo header-logo--mob">
+                        <use xlink:href="img/symbols.svg#logo-pink-white-mobile"></use>
+                      </svg>
+                      <svg width="150px" height="40px" class="header-logo header-logo--tabl">
+                        <use xlink:href="img/symbols.svg#logo-pink-white-tablet"></use>
+                      </svg>
+                      <svg width="150px" height="45px" class="header-logo header-logo--desk">
+                        <use xlink:href="img/symbols.svg#logo-pink-white-desktop"></use>
+                      </svg>
+                    </a>
+                    <a href="" class="main-nav__open-menu">
+                      <svg width="50px" height="25px" class="main-nav__open">
+                        <use xlink:href="img/symbols.svg#icon-menu-burger"></use>
+                      </svg>
+                      <svg width="50px" height="25px" class="main-nav__close">
+                        <use xlink:href="img/symbols.svg#icon-menu-cross"></use>
+                      </svg>
+                    </a>
                 </div>
-                <ul class="main-nav__list main-nav__list--menu-close">
+                <ul class="main-nav__list">
                   <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
                   <li class="main-nav__item"><a class="main-nav__link">Фотографии</a></li>
                   <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-                  <li class="main-nav__item"><a class="main-nav__link" href="http://htmlacademy.ru">Html Academy</a></li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="http://htmlacademy.ru">HTML Academy</a></li>
                 </ul>
             </div>
           </div>
@@ -40,7 +59,7 @@
           <header class="posts__header">
             <div class="center-wrapper">
               <h2 class="posts__title">
-                Взгляните на фотографии, которые выкладывают пользователи!<br>
+                Взгляните на фотографии, которые выкладывают пользователи!
                 Видите, как не хватает ваших?
               </h2>
             </div>
@@ -249,26 +268,32 @@
               <div class="photo-uploader__effects">
 
                 <div class="photo-uploader__effect photo-uploader__effect--crop">
-                  <img src="img/icon-editor-crop.svg" alt="crop">
+                  <svg width="48px" height="48px" class="photo-svg photo-svg--crop active">
+                    <use xlink:href="img/symbols.svg#icon-editor-crop"></use>
+                  </svg>
                   <div class="photo-uploader__range">
                     <div class="range__control"></div>
-                    <span class="range__pointer"></span>
+                    <span class="range__pointer range__pointer--crop"></span>
                   </div>
                 </div>
 
                 <div class="photo-uploader__effect photo-uploader__effect--fill">
-                  <img src="img/icon-editor-fill.svg" alt="fill">
+                  <svg width="48px" height="48px" class="photo-svg photo-svg--fill">
+                    <use xlink:href="img/symbols.svg#icon-editor-fill"></use>
+                  </svg>
                   <div class="photo-uploader__range">
                     <div class="range__control"></div>
-                    <span class="range__pointer"></span>
+                    <span class="range__pointer range__pointer--fill"></span>
                   </div>
                 </div>
 
                 <div class="photo-uploader__effect photo-uploader__effect--contrast">
-                  <img src="img/icon-editor-contrast.svg" alt="contrasr">
+                  <svg width="31px" height="31px" class="photo-svg photo-svg--contrast">
+                    <use xlink:href="img/symbols.svg#icon-editor-contrast"></use>
+                  </svg>
                   <div class="photo-uploader__range">
                     <div class="range__control"></div>
-                    <span class="range__pointer"></span>
+                    <span class="range__pointer range__pointer--contrast"></span>
                   </div>
                 </div>
 
@@ -291,11 +316,14 @@
       <footer class="page-footer">
         <div class="center-wrapper">
           <div class="footer-logo">
-            <picture>
-              <source media="(min-width:1200px)" srcset="img/logo-pink-blue-desktop.svg">
-              <source media="(min-width:700px)" srcset="img/logo-pink-blue-mobile.svg">
-              <img src="img/logo-pink-blue-mobile.svg">
-            </picture>
+            <a href="/" class="footer-logo__link">
+              <svg width="150px" height="45px" class="footer-logo-img footer-logo-img--desk">
+                <use xlink:href="img/symbols.svg#logo-pink-blue-desktop"></use>
+              </svg>
+              <svg width="146px" height="40px" class="footer-logo-img footer-logo-img--tabl">
+                <use xlink:href="img/symbols.svg#logo-pink-blue-mobile"></use>
+              </svg>
+            </a>
           </div>
           <div class="social">
             <a href="#" class="social-link social-link--tw">Twitter</a>
@@ -303,11 +331,19 @@
             <a href="#" class="social-link social-link--yo">Youtube</a>
           </div>
           <div class="copyright">
-            <a href="http://htmlacademy.ru" class="copyright__link">Разработано</a>
+            <a href="http://htmlacademy.ru" class="copyright__link">Разработано
+              <svg width="41px" height="38px" class="copyright__academy-logo">
+                <use xlink:href="img/symbols.svg#htmlacademy"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main-menu.js"></script>
+    <script src="js/photoUploader.js"></script>
+    <script>
+      svg4everybody();
+    </script>
   </body>
 </html>

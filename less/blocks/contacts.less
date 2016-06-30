@@ -1,24 +1,7 @@
 
 .contacts {
-  //padding: 0 20px;
   text-align: center;
-  position: relative;
-  &:after {
-    //content: '';
-    position: absolute;
-    height: 63px;
-    background: linear-gradient(to top right, transparent 49%, #f2f2f2 50%);
-    left: 0;
-    right: 50%;
-    bottom: -63px;
-    z-index: 50;
-  }
 }
-
-.contacts {
-
-}
-
 
 .contacts-header {
   margin-bottom: 32px;
@@ -65,37 +48,37 @@
 .contact {
   margin-bottom: 19px;
   padding-left: 2px;
-  &--email {
+  &&--email {
     padding-left: 13px;
     margin-bottom: 24px;
   }
   @media @tablet-width {
-    &--tel {
+    &&--tel {
       order: 1;
       margin-right: 100px;
       padding-left: 44px;
     }
-    &--email {
+    &&--email {
       order: 2;
       margin-bottom: 44px;
       & .contact__title {
         padding-right: 44px;
       }
     }
-    &--addres {
+    &&--addres {
       order: 3;
     }
   }
 
   @media @desktop-width {
-    &--tel {
+    &&--tel {
       order: 1;
       margin-right: 0;
     }
-    &--email {
+    &&--email {
       order: 3;
     }
-    &--addres {
+    &&--addres {
       order: 2;
       padding-left: 18px;
     }
@@ -134,9 +117,4 @@
       color: #e9eaeb;
     }
   }
-}
-
-.map {
-  position: relative;
-  z-index:49;
 }

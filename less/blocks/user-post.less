@@ -7,7 +7,7 @@
   }
   @media @tablet-width {
     width: 300px;
-    margin-right: 20px; // по макету 20пх
+    margin-right: 20px;
     margin-bottom: 18px;
     &:nth-child(2n) {
       margin-right: 0;
@@ -55,7 +55,6 @@
 
   @media @tablet-width {
     min-height: 300px;
-    //background: #c2c2c2; // картинка растянуться должна!
     margin-bottom: 0;
   }
 
@@ -137,7 +136,7 @@
 }
 
 
-.user-post--best {
+.user-post.user-post--best {
   margin-bottom: 13px;
   margin-left: auto;
   margin-right: auto;
@@ -146,7 +145,7 @@
 
   @media @tablet-width {
     width: 700px;
-    margin: auto !important;
+    margin: auto;
   }
 
   @media @desktop-width {
@@ -194,9 +193,6 @@
       padding: 19px 13px 11px 26px;
     }
 
-  }
-  & .user-post__title {
-    //margin-right: 2px;
   }
   .user-post__text {
     @media @desktop-width {

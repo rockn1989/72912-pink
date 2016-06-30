@@ -2,19 +2,18 @@
 .form-section {
   border: none;
   position: relative;
-  //padding: 0 20px;
   & legend {
     position: absolute;
     overflow: hidden;
   }
-  &--border {
+  &&--border {
     margin-left: -20px;
     margin-right: -20px;
   }
-  &--user-name {
+  &&--user-name {
     margin-bottom: 28px;
   }
-  &--progress {
+  &&--progress {
     margin-bottom: 26px;
     padding: 115px 20px 47px;
     background-color: #f2f2f2;
@@ -22,7 +21,7 @@
       top: 40px;
     }
   }
-  &--info {
+  &&--info {
     margin-bottom:40px;
     margin-left: 0;
     margin-right: 0;
@@ -31,7 +30,7 @@
       display: none;
     }
   }
-  &--application {
+  &&--application {
     margin-bottom: 0px;
     padding: 109px 20px 40px;
     background-color: #f2f2f2;
@@ -41,8 +40,7 @@
       right: 0;
     }
   }
-  &--description {
-    //margin-bottom: 41px;
+  &&--description {
     padding: 93px 20px 42px;
     & legend {
       top: 60px;
@@ -59,7 +57,7 @@
       align-items: flex-start;
       margin-bottom: 8px;
     }
-    &--border {
+    &&--border {
       border: 2px solid #e5e5e5;
       margin-left: 0;
       margin-right: 0;
@@ -67,10 +65,10 @@
     & legend {
       position: static;
     }
-    &--progress,
-    &--info,
-    &--description,
-    &--application {
+    &&--progress,
+    &&--info,
+    &&--description,
+    &&--application {
       width: 100%;
       padding: 48px 60px;
       background-color: transparent;
@@ -83,26 +81,29 @@
       display: block;
       margin-bottom: 0;
     }
-    &--user-name {
+    &&--user-name {
       order: 1;
       width: 100%;
       margin-bottom: 4px;
     }
-    &--progress {
+    &&--progress {
       order: 4;
       padding: 44px 60px 47px;
     }
-    &--info {
+    &&--info {
       order: 3;
       padding: 37px 59px 27px 57px;
+      & legend {
+        display: block;
+      }
     }
-    &--application {
+    &&--application {
       order: 2;
       padding:  44px 60px 55px 58px;
     }
-    &--description {
+    &&--description {
       order: 5;
-      padding: 38px 60px 47px 60px;
+      padding: 23px 60px 47px 60px;
     }
   }
 
@@ -113,18 +114,18 @@
       align-items: flex-start;
       margin-bottom: 8px;
     }
-    &--user-name {
+    &&--user-name {
       width: 434px;
       margin-right: 35px;
     }
-    &--progress {
+    &&--progress {
       padding: 44px 60px 12px;
       padding-right: 0;
     }
-    &--description {
-      padding: 32px 60px 35px;
+    &&--description {
+      padding: 20px 60px 35px;
     }
-    &--application {
+    &&--application {
       width: 434px;
       margin-left: 35px;
       margin-top: -16px;
@@ -133,9 +134,7 @@
         padding:  0 25px;
       }
     }
-    &--info {
-      display: flex;
-      flex-direction: row;
+    &&--info {
       padding: 34px 60px 12px;
     }
   }
@@ -153,7 +152,7 @@
   text-transform: uppercase;
   padding: 0 30px;
   margin-bottom: 40px;
-  &--margin {
+  &&--margin {
     margin-bottom: 17px;
   }
 }
