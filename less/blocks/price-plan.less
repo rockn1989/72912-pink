@@ -1,0 +1,158 @@
+.price-plan__wrapper {
+  width: 840px;
+  position: absolute;
+  .clearfix();
+  left: -260px;
+
+  @media @tablet-width {
+    position: static;
+    width: 100%;
+    padding: 16px 0 0 1px;
+  }
+
+}
+
+.price-plan {
+  width: 280px;
+  float: left;
+
+  @media @tablet-width {
+    width: 153px;
+  }
+
+  @media @desktop-width {
+    width: 232px;
+  }
+
+}
+
+.price-plan.price-plan--default {
+  display: none;
+  & .price-plan__option {
+    background-image: none;
+    text-transform: none;
+    text-indent: 0;
+  }
+  & .price-plan__header {
+    height: 80px;
+    background-color: transparent;
+
+    @media @desktop-width {
+      height: 98px;
+    }
+
+  }
+
+  @media @tablet-width {
+    display: block;
+  }
+
+}
+
+
+.price-plan__header {
+  background-color: #283645;
+  text-align: center;
+  color: #fff;
+  padding: 17px 0 19px;
+  border-right: 2px solid #e5e5e5;
+
+  @media @tablet-width {
+    height: 80px;
+    padding: 13px 0;
+  }
+
+  @media @desktop-width {
+    height: 98px;
+    padding: 16px 0;
+  }
+
+  &&--hit {
+    position: relative;
+    overflow: hidden;
+    &:after {
+      content: "ХИТ";
+      display: block;
+      position: absolute;
+      width: 100px;
+      height: 30px;
+      .text-size(14px);
+      font-weight: bold;
+      color: #ffffff;
+      text-transform: uppercase;
+      background-color: #d22856;
+      top:11px;
+      left: -28px;
+      transform: rotate(-45deg);
+
+      @media @tablet-width {
+        top: 5px;
+        left: -29px;
+      }
+
+    }
+  }
+}
+
+.price-plan__title {
+  font-weight: bold;
+  .text-size(18px);
+  margin-bottom: 1px;
+  text-transform: uppercase;
+
+  @media @tablet-width {
+    .text-size(16px, 30px);
+  }
+
+}
+
+.price-plan__price {
+  .text-size(24px);
+  font-weight: 300;
+
+  @media @tablet-width {
+    .text-size(18px);
+    font-weight: 300;
+  }
+
+  @media @desktop-width {
+    .text-size(24px, 30px);
+  }
+
+}
+
+.price-plan__options {
+  font-weight: normal;
+  list-style: none;
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+}
+
+.price-plan__option {
+  text-transform: uppercase;
+  .text-size(14px);
+  color: #283645;
+  padding: 16px 17px 14px 20px;
+  border-bottom: 1px solid #e5e5e5;
+  background-position: right 18px center;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  &&--included {
+    background-image: url("../img/icon-yes.svg");
+  }
+  &&--absent {
+    background-image: url("../img/icon-no.svg");
+  }
+
+  @media @tablet-width {
+    text-indent: -9999px;
+    background-position: center;
+    padding: 5px 17px 11px 10px;
+  }
+
+  @media @desktop-width {
+    .text-size(18px);
+    padding: 12px 17px 18px 16px;
+  }
+
+}

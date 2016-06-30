@@ -19,9 +19,8 @@
 
 }
 
-
 .ad-effect__logo {
-
+  position: relative;
   svg#timer {
     width: 240px;
     height: 280px;
@@ -35,6 +34,22 @@
 
   & img {
     display: block;
+  }
+
+  &--24 {
+    position: absolute;
+    .text-size(96px, 150px);
+    font-weight: bold;
+    color: #d22856;
+    top: 80px;
+    left: 57px;
+
+    @media @desktop-width {
+      .text-size(120px, 186px);
+      top: 102px;
+      left: 83px;
+    }
+
   }
 
   @media @tablet-width {

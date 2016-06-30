@@ -63,7 +63,7 @@ gulp.task("svgstore:dev", function () {
 });
 
 gulp.task("svgmin", function () {
-  return gulp.src("build/img/*.svg")
+  return gulp.src("img/*.svg")
         .pipe(svgmin())
         .pipe(gulp.dest("build/img/"));
 });
