@@ -51,12 +51,19 @@
 
     }
 
+    & .main-nav__open {
+      display: none;
+    }
+    & .main-nav__close {
+      display: block;
+    }
+
     @media @desktop-width {
       background-color: transparent;
     }
 
   }
-  &--no-js {
+  &&--no-js {
     & .main-nav__list {
       position: static;
       width: 100%;
@@ -211,6 +218,7 @@
 
 .main-nav__item {
   display: inline-block;
+  vertical-align: top;
   width: 100%;
   text-align: center;
   border-top: 1px solid #485461;

@@ -6,7 +6,7 @@
 
   if(menuNav) {
     menuNav.classList.remove("main-nav--open");
-    menuNav.classList.remove("main-nav__list--no-js");
+    menuNav.classList.remove("main-nav--no-js");
   }
 
 
