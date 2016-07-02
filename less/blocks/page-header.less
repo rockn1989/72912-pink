@@ -16,7 +16,7 @@
   }
 
   &&--bg {
-
+    overflow: hidden;
     &:after {
       content: "";
       display: block;
@@ -31,7 +31,9 @@
       z-index: 1;
 
       @media @tablet-width {
-        background-position: 10px bottom;
+        left: 50%;
+        transform: translateX(-50%);
+        background-position: 36px bottom;
         background-size: 693px 545px;
         height: 548px;
         bottom: 0;
@@ -39,8 +41,9 @@
       }
 
       @media @desktop-width {
-        background-position: 274px bottom;
-        background-size: 1040px 649px;
+        width: 1200px;
+        background-position: 152px bottom;
+        background-size: 1040px 640px;
         height: 644px;
         .background-retina("iphone-hand-desktop","png");
       }
