@@ -20,7 +20,9 @@
 }
 
 .ad-effect__logo {
+
   position: relative;
+
   svg#timer {
     width: 240px;
     height: 280px;
@@ -36,14 +38,15 @@
     display: block;
   }
 
-  &--24 {
+  &&--24 {
     position: absolute;
     .text-size(96px, 150px);
     font-weight: bold;
     color: #d22856;
     top: 80px;
     left: 57px;
-
+    width: auto;
+    margin: 0;
     @media @desktop-width {
       .text-size(120px, 186px);
       top: 102px;

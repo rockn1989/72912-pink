@@ -206,14 +206,25 @@
 
 .photo-svg {
   cursor: pointer;
-  opacity: .5;
-  fill: #8d949b;
+
   &:hover {
     opacity: 1;
   }
-  &.active {
+
+  &--active {
     fill: #d22856;
     opacity: 1;
+  }
+
+  &--disabled {
+    opacity: .5;
+    fill: #8d949b;
+
+    @media @tablet-width {
+      opacity: 1;
+      fill: #d22856;
+    }
+
   }
 
   @media @tablet-width {

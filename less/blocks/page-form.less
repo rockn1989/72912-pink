@@ -34,23 +34,22 @@
   text-align: center;
   color:#283645;
 
-  &--attention {
-    display: none;
-  }
-
   @media @tablet-width {
     .text-size(18px);
     padding: 0 40px;
-    &--attention {
-      display: block;
-    }
   }
 
   @media @desktop-width {
     padding: 0 75px;
-    &--attention {
-      display: inline;
-    }
+  }
+
+}
+
+.form-header__add-info {
+  display: none;
+
+  @media @tablet-width {
+    display: inline;
   }
 
 }
